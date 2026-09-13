@@ -42,20 +42,14 @@ img.bw{filter:grayscale(1) contrast(1.12) brightness(.92) sepia(.12)}
 .top.over{position:absolute;background:transparent;border:0;color:#fff}
 .bar{display:flex;align-items:center;justify-content:space-between;height:84px}
 .brand{display:flex;align-items:center;gap:14px;font-size:21px;font-weight:500;letter-spacing:.02em;white-space:nowrap}
-.mark{width:32px;height:32px;position:relative;flex:none}
-.mark::before,.mark::after{content:"";position:absolute;width:24px;height:24px;mix-blend-mode:multiply;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
-.mark::before{left:0;top:4px;background:var(--blue)}
-.mark::after{left:8px;top:0;background:var(--red)}
-.brand:hover .mark::before{transform:translate(4px,-2px)}
-.brand:hover .mark::after{transform:translate(-4px,2px)}
-.top.over .mark::before,.top.over .mark::after{mix-blend-mode:normal;opacity:.9}
+.mark{width:64px;height:64px;object-fit:contain;flex:none}
 .top nav{display:flex;align-items:center;gap:32px;font-size:17px}
 .top nav a.on{border-bottom:2px solid var(--blue);padding-bottom:2px}
 .top nav a:hover{color:var(--red)}
 .langs{display:flex;gap:14px;margin-left:6px;padding-left:22px;border-left:1px solid currentColor;font-size:15px}
 .langs a:not(.cur){opacity:.45}
 @media(max-width:1000px){.top nav{gap:18px;font-size:14px}.brand{font-size:18px}}
-@media(max-width:760px){.bar{height:auto;flex-direction:column;align-items:flex-start;gap:6px;padding:14px 0}.top nav{flex-wrap:wrap;gap:10px 16px;font-size:14px}.langs{margin-left:auto}.top.over{position:relative;background:var(--ink)}}
+@media(max-width:960px){.bar{height:auto;flex-direction:column;align-items:flex-start;gap:6px;padding:14px 0}.top nav{flex-wrap:wrap;gap:10px 16px;font-size:14px}.langs{margin-left:auto}.top.over{position:relative;background:var(--ink)}}
 
 /* ---------- hero ---------- */
 /* 地: 展示の写真を古い白黒写真の調子にして敷く */

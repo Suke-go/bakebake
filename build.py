@@ -227,7 +227,7 @@ def shell(lang, page, body, root, home=False, title=None, description=None):
 <body>
 <header class="top{' over' if home else ''}">
   <div class="wrap bar">
-    <a class="brand" href="{root}index.html"><span class="mark" aria-hidden="true"></span>Project BAKEBAKE</a>
+    <a class="brand" href="{root}index.html"><img class="mark" src="{assets}assets/bakebake-logo.png" alt="" width="64" height="64">Project BAKEBAKE</a>
     <nav>{nav}{langs}</nav>
   </div>
 </header>
