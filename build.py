@@ -221,13 +221,13 @@ def shell(lang, page, body, root, home=False, title=None, description=None):
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Antique&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Archivo+Narrow:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&display=swap">
 <link rel="stylesheet" href="{assets}site.css">
 </head>
 <body>
 <header class="top{' over' if home else ''}">
   <div class="wrap bar">
-    <a class="brand" href="{root}index.html"><img class="mark" src="{assets}assets/bakebake-logo.png" alt="" width="64" height="64">Project BAKEBAKE</a>
+    <a class="brand" href="{root}index.html"><img class="mark" src="{assets}assets/bakebake-logo.png" alt="" width="80" height="80">Project BAKEBAKE</a>
     <nav>{nav}{langs}</nav>
   </div>
 </header>
