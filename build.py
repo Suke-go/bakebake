@@ -38,7 +38,7 @@ E.update(title="Project BAKEBAKE",
          data="Data: Database of Folktales of Mysterious Phenomena and Yōkai (International Research Center for Japanese Studies)")
 
 # ------------------------------------------------------------ team
-LINK = {"Kosuke Shimizu": "https://ksk432.com", "Mirai Hoshikawa": "https://miraihoshikawa.github.io/"}
+LINK = {"Kosuke Shimizu": "https://ksk432.com", "Hiroki Ichikura": "https://x.com/icchy_yakumo", "Mirai Hoshikawa": "https://miraihoshikawa.github.io/"}
 PHOTO = {"Kosuke Shimizu": "m_shimizu.jpg", "Hiroki Ichikura": "m_ichikura.jpg", "Riri Ikebe": "m_ikebe.jpg", "Mirai Hoshikawa": "m_hoshikawa.jpg"}
 J["groups"] = [("Members", "メンバー", [
     ("Kosuke Shimizu", "清水 紘輔", "妖怪生成装置の実装・実験設計", "筑波大学 情報学群 情報メディア創成学類"),
@@ -67,9 +67,10 @@ J["works"] = [
     ("2025–2026", "subspace.png", ["Archive Analysis", "Retrieval"], "Related-Yōkai Search", "関連妖怪検索",
      "基盤モデルの凍結埋め込みに対して、メタデータに基づくコントラスト学習を後付けで適用し、妖怪資料間の類似性を「話題」「地域」「現象」の複数軸に分解して扱う。単一の類似度では捉えにくい関係を軸ごとに見ることができ、展示では利用者が関心に応じて関連妖怪を探索できる。妖怪生成装置の検索段階もこの上で動く。",
      None, None),
-    ("2025–2026", None, ["XR"], "XR Folklore Experience", "XR 伝承体験システム",
-     "伝承の場面を XR で体験するシステム。妖怪生成装置、妖怪マップと合わせて XR Meetup Aichi と XR Kaigi で展示した。",
-     None, ("aHgcSVWnUmc", "XR 伝承体験システムの映像プロトタイプ")),
+    ("2025–2026", "xr_front.jpg", ["XR"], "XR Folklore Experience", "XR 伝承体験システム",
+     "伝承の場面を XR で体験するシステム。怪異が語られた土地の古地図の上に伝承の映像を重ね、暗がりの中で気配を感じ取ることで伝承を身体的に学ぶ。会場では投影と VR ヘッドセット（Meta Quest 3）の両方で体験できる。\n\n"
+     "最初の題材は、東京・赤坂の紀伊國坂に伝わる「むじな」。夜道で泣く女に声をかけると顔のないのっぺらぼうだった――という、小泉八雲『怪談』にも収められた話である。妖怪生成装置、妖怪マップと合わせて TSUKUBA CONNÉCT、TOKYO NODE XR HACKATHON、XR Meetup Aichi、XR Kaigi で展示した。",
+     ("xr_dome.jpg", "古地図の上に投影された「妖怪×都市」"), ("aHgcSVWnUmc", "XR 伝承体験システムの映像プロトタイプ")),
 ]
 E["works"] = [
     ("2025–2026", "interface.png", ["Generative Apparatus"], "Yōkai-Generating Apparatus", "妖怪生成装置",
@@ -83,9 +84,10 @@ E["works"] = [
     ("2025–2026", "subspace.png", ["Archive Analysis", "Retrieval"], "Related-Yōkai Search", "関連妖怪検索",
      "Metadata-based contrastive learning is applied post hoc to frozen foundation-model embeddings so that similarity between records can be decomposed into topic, region, and phenomenon axes. Relations that a single similarity score obscures can be inspected axis by axis, and exhibition visitors can explore related yōkai according to their interest. The retrieval stage of the apparatus runs on the same basis.",
      None, None),
-    ("2025–2026", None, ["XR"], "XR Folklore Experience", "XR 伝承体験システム",
-     "A system for experiencing scenes from folklore in XR. Exhibited together with the apparatus and the yōkai map at XR Meetup Aichi and XR Kaigi.",
-     None, ("aHgcSVWnUmc", "XR folklore experience prototype")),
+    ("2025–2026", "xr_front.jpg", ["XR"], "XR Folklore Experience", "XR 伝承体験システム",
+     "A system for experiencing scenes from folklore in XR. Imagery of a tale is layered onto old maps of the place where it was told, so that the visitor learns the tale bodily by sensing a presence in the dark. At venues it is shown both as a projection and through a VR headset (Meta Quest 3).\n\n"
+     "The first subject is the “Mujina” of Kii-no-kuni-zaka in Akasaka, Tokyo — the tale, also told by Lafcadio Hearn in Kwaidan, of a traveller who speaks to a weeping woman on a night road and finds she has no face. Exhibited together with the apparatus and the yōkai map at TSUKUBA CONNÉCT, TOKYO NODE XR HACKATHON, XR Meetup Aichi, and XR Kaigi.",
+     ("xr_dome.jpg", "“Yōkai × City” projected over an old map"), ("aHgcSVWnUmc", "XR folklore experience prototype")),
 ]
 
 # ------------------------------------------------------------ activities (label, date, image, title, body, link)
@@ -93,29 +95,37 @@ J["acts"] = [
     ('Exhibition', '2026/12', 'siggraph-asia-2026-logo.png', 'BAKEBAKE in SIGGRAPH Asia!', 'SIGGRAPH Asia 2026に出展します！ 2026年12月、マレーシア・クアラルンプールで、BAKEBAKEの「妖怪生成装置」を紹介します。\n\nふと感じた不思議な気配や、うまく言葉にできない日常のもやもや。そんな体験を入力すると、昔から伝わる妖怪の話を手がかりに、AIが妖怪の名前や物語、姿を提案します。自分で選んだり、名前を考えたりしながら、自分だけの妖怪をつくる体験です。\n\nSIGGRAPH Asiaは、コンピューターグラフィックスや、人とコンピューターの新しい関わり方をテーマにした国際会議・展示会です。2026年は12月1日〜4日にクアラルンプール・コンベンションセンター（KLCC）で開催されます。\n\n日常の小さな不思議が、どんな妖怪になるのか。会場でお会いできるのを楽しみにしています！', ('https://asia.siggraph.org/2026/', 'SIGGRAPH Asia 2026公式サイト')),
     ('Event', '2026/09/02', 'foss4g-2026-presentation-1.jpg', 'FOSS4G 2026にて発表しました', '2026年9月2日、地図や位置情報を扱うオープンソース技術の国際会議「FOSS4G 2026」にて、妖怪伝承を地図で読み解く研究を発表しました。国際日本文化研究センターの「怪異・妖怪伝承データベース」に収録された33,378件を対象に、物語がどのような場所と結びついているのかを調べる取り組みです。\n\n昔の妖怪の話には、地名だけでなく「川辺」「峠」「村はずれ」のような場所の描写が登場します。住所がわからなくても、そこがどんな場所だったかを知る手がかりになります。今回の研究では、文章からこうした言葉をコンピューターで取り出し、地図上の川や海、行政区域の情報と照らし合わせました。\n\n地図に載せるときに大切にしたのは、場所がどこまでわかっているかを伝えることです。県までしかわからない話は県の範囲で、市町村を絞り込める話はその範囲で扱い、文章に書かれた手がかりも一緒に残します。地図上の目印を、そのまま出来事が起きた正確な地点と受け取らないための工夫です。\n\n調べた伝承のうち、地名を含むものは約28％でしたが、場所の様子を表す言葉は約75％に見られました。また、河童の話には水辺に関する言葉、幽霊の話には死や弔いに関する言葉が結びつく傾向がありました。これは、伝承の中で何がどのような場所とともに語られているかを示す結果です。\n\n身近な土地にどんな物語が残り、人々が川や道、暮らしの境目をどう捉えてきたのか。場所の曖昧さも含めて伝承を整理することで、地域の文化を地図から読み解くための手がかりを示しました。\n\n発表題目：<span lang="en">Geographic Visualization of the Kaii-Yokai Folklore Database Using Open-Source GIS and NLP</span>', ('https://talks.osgeo.org/foss4g-2026/talk/LGWHNG/', '発表概要（FOSS4G 2026公式サイト・英語）')),
     ("Exhibition", "2026/02 – 2026/05", "venue.jpg", "妖怪EXPO 2026（小豆島）に出展",
-     "改良した妖怪生成装置を出展。妖怪研究の第一人者である小松和彦氏に体験いただき、専門的な知見に基づく評価を得た。以降も各地で展示を継続し、79 セッションから 66 体の妖怪が生成された。", None),
-    ("Event", "2026/01", None, "デジタルアーカイブ学会 第10回研究大会、第4回DH若手の会で発表",
-     "一橋講堂にて、妖怪マップと妖怪生成装置の設計成果を発表。", ("https://www.jstage.jst.go.jp/article/jsda/9/s2/9_s226/_article/-char/ja", "発表原稿（J-STAGE）")),
+     "2026年2月22日、香川県・小豆島の土庄町総合会館フレトピアホールで開催された「日本最大級の妖怪見本市」YOKAI EXPO 2026 に、改良した妖怪生成装置を出展。妖怪研究の第一人者である小松和彦氏に体験いただき、専門的な知見に基づく評価を得た。以降も各地で展示を継続し、79 セッションから 66 体の妖怪が生成された。", ("https://www.yokaiexpo.com/", "YOKAI EXPO 公式サイト")),
+    ("Event", "2026/01/10", None, "デジタルアーカイブ学会 第10回研究大会、第4回DH若手の会で発表",
+     "一橋講堂にて、妖怪マップと妖怪生成装置の設計成果をポスター発表 [P10]。予稿はデジタルアーカイブ学会誌に掲載。", ("https://www.jstage.jst.go.jp/article/jsda/9/s2/9_s226/_article/-char/ja", "発表原稿（J-STAGE）")),
     ("Workshop", "2025", None, "湘南白百合学園中学・高等学校 特別授業での展示",
      "研究成果の社会還元として、特別授業における展示を実施。", None),
-    ("Exhibition", "2025", None, "XR Kaigi に出展",
-     "妖怪生成装置と XR 伝承体験システムを展示。来場者の反応をもとに展示構成とインタラクションを再設計した。", None),
-    ("Exhibition", "2025", None, "XR Meetup Aichi に出展",
-     "妖怪生成装置、XR 伝承体験システム、妖怪マップを展示。", None),
+    ("Exhibition", "2025/12/02 – 12/03", None, "XR Kaigi 2025 に出展",
+     "国内最大級の XR カンファレンス XR Kaigi 2025 のエキスポフロアにて、Iwaken Lab. ブースの一作品として妖怪生成装置と XR 伝承体験システムを展示。来場者の反応をもとに展示構成とインタラクションを再設計した。", ("https://www.xrkaigi.com/", "XR Kaigi")),
+    ("Exhibition", "2025/11/22", "xr-meetup-aichi.jpg", "XR Meetup Aichi 2025 #1 に出展",
+     "KITTE名古屋 JPタワー名古屋ホール＆カンファレンスで開催された東海地区の XR コミュニティイベントにて、妖怪生成装置、XR 伝承体験システム、妖怪マップを展示。", ("https://peatix.com/event/4530538", "イベントページ（Peatix）")),
+    ("Event", "2025/09/12", "tokyo-node-final-pitch.jpg", "TOKYO NODE \"XR HACKATHON\" Final Pitch に進出",
+     "TOKYO NODE LAB 主催・Niantic Spatial 協力の都市体験 XR ハッカソン（2025年7〜10月）。開発期間を経て、9月12日の Final Pitch に進出した。", ("https://www.tokyonode.jp/lab/events/20250619_01/index.html", "イベントページ（TOKYO NODE）")),
+    ("Exhibition", "2025/08/20", "tsukuba-connect-79.jpg", "TSUKUBA CONNÉCT #79 で実機展示",
+     "「拡張される現実、交差する未来：XRがひらく社会実装のフロンティア」（つくばスタートアップパーク）の Demo Table にて、XR 伝承体験システムを実機展示。", ("https://civicpower.jp/event/735/", "イベントページ")),
 ]
 E["acts"] = [
     ('Exhibition', '2026/12', 'siggraph-asia-2026-logo.png', 'BAKEBAKE in SIGGRAPH Asia!', 'We’re exhibiting at SIGGRAPH Asia 2026! This December, we’ll bring BAKEBAKE’s yōkai-generating apparatus to Kuala Lumpur, Malaysia.\n\nAn unexplained presence, a strange feeling, or an everyday moment that is hard to put into words: tell the apparatus about your experience, and AI draws on traditional Japanese folklore to suggest a yōkai’s name, story, and appearance. Choose from the suggestions or invent a name yourself to make the yōkai your own.\n\nSIGGRAPH Asia is an international conference and exhibition exploring computer graphics and new ways for people to interact with technology. The 2026 event takes place on December 1–4 at the Kuala Lumpur Convention Centre (KLCC).\n\nWhat kind of yōkai will emerge from your everyday mysteries? We look forward to seeing you there!', ('https://asia.siggraph.org/2026/', 'SIGGRAPH Asia 2026 official website')),
     ('Event', '2026/09/02', 'foss4g-2026-presentation-1.jpg', 'Presented at FOSS4G 2026', 'On September 2, 2026, we presented our research at FOSS4G 2026, an international conference on open-source mapping and geospatial technology. We explored how stories connect with places using 33,378 records from the Kaii-Yokai Folklore Database maintained by the International Research Center for Japanese Studies.\n\nOld stories about yōkai, the mysterious beings of Japanese folklore, often mention a riverbank, mountain pass, or village edge. These descriptions offer clues about a setting even without an address. We used software to extract such clues from the stories and compare them with map information about rivers, coastlines, and administrative areas.\n\nOur approach keeps track of how precisely a place is known. A story located only within a prefecture remains associated with that area; one with clearer evidence can be narrowed down to a municipality. The words in the story are preserved alongside this information, so a marker on the map is not mistaken for the exact site of an event.\n\nAbout 28% of the records contain place names, while about 75% contain words describing places. Kappa stories tend to use water-related language, and ghost stories tend to use words about death and mourning. These findings describe how places appear in the stories.\n\nKeeping these clues and uncertainties visible helps us explore local culture through maps: what stories people told about their surroundings, and how they understood familiar places.\n\nTalk title: Geographic Visualization of the Kaii-Yokai Folklore Database Using Open-Source GIS and NLP', ('https://talks.osgeo.org/foss4g-2026/talk/LGWHNG/', 'Read the abstract on the FOSS4G 2026 website')),
     ("Exhibition", "2026/02 – 2026/05", "venue.jpg", "Exhibited at YOKAI EXPO 2026, Shodoshima",
-     "The revised apparatus was exhibited. Kazuhiko Komatsu, the leading scholar of yōkai studies, tried it and gave an evaluation based on his expertise. Exhibitions continued at further venues; 79 sessions produced 66 yōkai.", None),
-    ("Event", "2026/01", None, "Presentations at the Japan Society for Digital Archive 10th Annual Meeting and the 4th DH Young Researchers' Meeting",
-     "Presentation of the yōkai map and apparatus design at Hitotsubashi Hall.", ("https://www.jstage.jst.go.jp/article/jsda/9/s2/9_s226/_article/-char/ja", "Proceedings (J-STAGE)")),
+     "The revised apparatus was exhibited at YOKAI EXPO 2026, Japan's largest yōkai fair, held on February 22, 2026 at Tonosho Town Hall (Furetopia Hall) on Shodoshima, Kagawa. Kazuhiko Komatsu, the leading scholar of yōkai studies, tried it and gave an evaluation based on his expertise. Exhibitions continued at further venues; 79 sessions produced 66 yōkai.", ("https://www.yokaiexpo.com/", "YOKAI EXPO website")),
+    ("Event", "2026/01/10", None, "Presentations at the Japan Society for Digital Archive 10th Annual Meeting and the 4th DH Young Researchers' Meeting",
+     "Poster presentation [P10] of the yōkai map and apparatus design at Hitotsubashi Hall. Proceedings published in the Journal of the Japan Society for Digital Archive.", ("https://www.jstage.jst.go.jp/article/jsda/9/s2/9_s226/_article/-char/ja", "Proceedings (J-STAGE)")),
     ("Workshop", "2025", None, "Exhibition in a special class at Shonan Shirayuri Gakuen Junior and Senior High School",
      "Exhibition as part of a special class.", None),
-    ("Exhibition", "2025", None, "Exhibited at XR Kaigi",
-     "Exhibition of the apparatus and the XR folklore experience. Exhibit layout and interaction were redesigned from visitor feedback.", None),
-    ("Exhibition", "2025", None, "Exhibited at XR Meetup Aichi",
-     "Exhibition of the apparatus, the XR folklore experience, and the yōkai map.", None),
+    ("Exhibition", "2025/12/02 – 12/03", None, "Exhibited at XR Kaigi 2025",
+     "Shown at the Iwaken Lab. booth on the expo floor of XR Kaigi 2025, one of Japan's largest XR conferences: the apparatus and the XR folklore experience. Exhibit layout and interaction were redesigned from visitor feedback.", ("https://www.xrkaigi.com/", "XR Kaigi")),
+    ("Exhibition", "2025/11/22", "xr-meetup-aichi.jpg", "Exhibited at XR Meetup Aichi 2025 #1",
+     "Exhibition of the apparatus, the XR folklore experience, and the yōkai map at the Tōkai-area XR community event held at KITTE Nagoya / JP Tower Nagoya Hall & Conference.", ("https://peatix.com/event/4530538", "Event page (Peatix)")),
+    ("Event", "2025/09/12", "tokyo-node-final-pitch.jpg", "Final Pitch at TOKYO NODE \"XR HACKATHON\"",
+     "A city-experience XR hackathon run by TOKYO NODE LAB with Niantic Spatial (July–October 2025). After the development period the team advanced to the Final Pitch on September 12.", ("https://www.tokyonode.jp/lab/events/20250619_01/index.html", "Event page (TOKYO NODE)")),
+    ("Exhibition", "2025/08/20", "tsukuba-connect-79.jpg", "Live demo at TSUKUBA CONNÉCT #79",
+     "Live demo of the XR folklore experience at the Demo Table of the XR-themed edition of TSUKUBA CONNÉCT, held at Tsukuba Startup Park.", ("https://civicpower.jp/event/735/", "Event page")),
 ]
 
 # ------------------------------------------------------------ publications (year -> entries: authors, title, venue, date, link)
@@ -158,8 +168,8 @@ E["research_groups"] = [
 ACT_SUMMARIES = {'ja': {'siggraph-asia-2026': 'SIGGRAPH Asia 2026に出展します。あなたの体験から妖怪が生まれる「妖怪生成装置」を紹介します。', 'foss4g-2026': '約3万3千件の妖怪伝承から、物語と場所のつながりを読み解く研究を紹介しました。'}, 'en': {'siggraph-asia-2026': 'We’re exhibiting at SIGGRAPH Asia 2026! Discover an apparatus that turns your experiences into yōkai.', 'foss4g-2026': 'Exploring the links between stories and places through more than 33,000 records of Japanese yōkai folklore.'}}
 
 WORK_SLUGS = ["apparatus", "map", "search", "xr"]
-ACT_SLUGS = ["siggraph-asia-2026", "foss4g-2026", "yokai-expo-2026", "jsda-2026", "shonan-shirayuri", "xr-kaigi", "xr-meetup-aichi"]
-RECORD_PHOTOS = {"venue.jpg", "booth.jpg", "receipts.jpg"}   # 記録写真は白黒。装置の画面と生成図像はカラー。
+ACT_SLUGS = ["siggraph-asia-2026", "foss4g-2026", "yokai-expo-2026", "jsda-2026", "shonan-shirayuri", "xr-kaigi", "xr-meetup-aichi", "tokyo-node-xr-hackathon", "tsukuba-connect-79"]
+RECORD_PHOTOS = {"venue.jpg", "booth.jpg", "receipts.jpg", "xr-meetup-aichi.jpg", "tokyo-node-final-pitch.jpg", "tsukuba-connect-79.jpg", "xr_dome.jpg"}   # 記録写真は白黒。装置の画面と生成図像はカラー。
 
 # ================================================================ rendering
 ICON = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M14 3h7v7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M21 3 11 13" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M19 13v7H4V5h7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>'
@@ -203,6 +213,12 @@ def shell(lang, page, body, root, home=False, title=None, description=None):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{ttl}</title>
 <meta name="description" content="{escape(description or (t['title'] + ' | ' + t['full']), quote=True)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Project BAKEBAKE">
+<meta property="og:title" content="{escape(ttl, quote=True)}">
+<meta property="og:description" content="{escape(description or t['full'], quote=True)}">
+<meta property="og:image" content="https://bakebake.org/assets/venue.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Antique&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Archivo+Narrow:wght@400;500;700&display=swap">
@@ -452,6 +468,7 @@ def page_contact(lang):
 <p class="pagesub">{t['contact_p']}</p>
 <p class="mail"><a class="u" href="mailto:shimizu@ai.iit.tsukuba.ac.jp">shimizu@ai.iit.tsukuba.ac.jp</a></p>
 <p class="dim">{'University of Tsukuba · Japan Women’s University' if lang=='en' else '筑波大学 · 日本女子大学'}<br>{t['fund']}</p>
+<p class="dim" style="margin-top:24px">{'Updates on X: ' if lang=='en' else '最新情報（X）: '}<a class="u" href="https://x.com/ksk432smz" target="_blank" rel="noopener">@ksk432smz</a> · <a class="u" href="https://x.com/icchy_yakumo" target="_blank" rel="noopener">@icchy_yakumo</a></p>
 </div></section>"""
     return shell(lang, "contact", body, "")
 
