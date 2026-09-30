@@ -101,7 +101,7 @@ J["acts"] = [
      "一橋講堂にて、妖怪マップと妖怪生成装置の設計成果をポスター発表 [P10]。予稿はデジタルアーカイブ学会誌に掲載。", ("https://www.jstage.jst.go.jp/article/jsda/9/s2/9_s226/_article/-char/ja", "発表原稿（J-STAGE）")),
     ("Workshop", "2025", None, "湘南白百合学園中学・高等学校 特別授業での展示",
      "研究成果の社会還元として、特別授業における展示を実施。", None),
-    ("Exhibition", "2025/12/02 – 12/03", None, "XR Kaigi 2025 に出展",
+    ("Exhibition", "2025/12/02 – 12/03", "xr-kaigi-2025.jpg", "XR Kaigi 2025 に出展",
      "国内最大級の XR カンファレンス XR Kaigi 2025 のエキスポフロアにて、Iwaken Lab. ブースの一作品として妖怪生成装置と XR 伝承体験システムを展示。来場者の反応をもとに展示構成とインタラクションを再設計した。", ("https://www.xrkaigi.com/", "XR Kaigi")),
     ("Exhibition", "2025/11/22", "xr-meetup-aichi.jpg", "XR Meetup Aichi 2025 #1 に出展",
      "KITTE名古屋 JPタワー名古屋ホール＆カンファレンスで開催された東海地区の XR コミュニティイベントにて、妖怪生成装置、XR 伝承体験システム、妖怪マップを展示。", ("https://peatix.com/event/4530538", "イベントページ（Peatix）")),
@@ -120,7 +120,7 @@ E["acts"] = [
      "Poster presentation [P10] of the yōkai map and apparatus design at Hitotsubashi Hall. Proceedings published in the Journal of the Japan Society for Digital Archive.", ("https://www.jstage.jst.go.jp/article/jsda/9/s2/9_s226/_article/-char/ja", "Proceedings (J-STAGE)")),
     ("Workshop", "2025", None, "Exhibition in a special class at Shonan Shirayuri Gakuen Junior and Senior High School",
      "Exhibition as part of a special class.", None),
-    ("Exhibition", "2025/12/02 – 12/03", None, "Exhibited at XR Kaigi 2025",
+    ("Exhibition", "2025/12/02 – 12/03", "xr-kaigi-2025.jpg", "Exhibited at XR Kaigi 2025",
      "Shown at the Iwaken Lab. booth on the expo floor of XR Kaigi 2025, one of Japan's largest XR conferences: the apparatus and the XR folklore experience. Exhibit layout and interaction were redesigned from visitor feedback.", ("https://www.xrkaigi.com/", "XR Kaigi")),
     ("Exhibition", "2025/11/22", "xr-meetup-aichi.jpg", "Exhibited at XR Meetup Aichi 2025 #1",
      "Exhibition of the apparatus, the XR folklore experience, and the yōkai map at the Tōkai-area XR community event held at KITTE Nagoya / JP Tower Nagoya Hall & Conference.", ("https://peatix.com/event/4530538", "Event page (Peatix)")),
@@ -171,7 +171,7 @@ ACT_SUMMARIES = {'ja': {'jsda-11th-2026': '池辺莉々がデジタルアーカ�
 
 WORK_SLUGS = ["apparatus", "map", "search", "xr"]
 ACT_SLUGS = ["jsda-11th-2026", "siggraph-asia-2026", "foss4g-2026", "yokai-expo-2026", "jsda-2026", "shonan-shirayuri", "xr-kaigi", "xr-meetup-aichi", "tokyo-node-xr-hackathon", "tsukuba-connect-79"]
-RECORD_PHOTOS = {"venue.jpg", "booth.jpg", "receipts.jpg", "xr-meetup-aichi.jpg", "tokyo-node-final-pitch.jpg", "tsukuba-connect-79.jpg", "xr_dome.jpg"}   # 記録写真は白黒。装置の画面と生成図像はカラー。
+RECORD_PHOTOS = {"venue.jpg", "booth.jpg", "receipts.jpg"}   # 記録写真は白黒。装置の画面と生成図像はカラー。Activities ページの写真はカラー（color=True）。
 
 # ================================================================ rendering
 ICON = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M14 3h7v7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M21 3 11 13" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M19 13v7H4V5h7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>'
@@ -184,14 +184,14 @@ def plink(name):
     return f'<a class="plink" href="{u}" target="_blank" rel="noopener" aria-label="{u}">{ICON}<span>{u.replace("https://", "").rstrip("/")}</span></a>'
 
 
-def img(assets, name, alt="", cls=""):
+def img(assets, name, alt="", cls="", color=False):
     if name == 'siggraph-asia-2026-logo.png':
         cls = (cls + ' event-logo').strip()
         alt = alt or 'SIGGRAPH Asia 2026 Kuala Lumpur'
     if name == 'jsda-11th-2026.jpg':
         cls = (cls + ' event-banner').strip()
         alt = alt or 'Japan Society for Digital Archive, 11th Annual Meeting, November 7–8, 2026, Kindai University'
-    bw = " bw" if name in RECORD_PHOTOS or name.startswith("m_") else ""
+    bw = " bw" if not color and (name in RECORD_PHOTOS or name.startswith("m_")) else ""
     c = (cls + bw).strip()
     attr = f' class="{c}"' if c else ""
     return f'<img src="{assets}assets/{name}" alt="{alt}"{attr}>'
@@ -402,7 +402,7 @@ def page_activities(lang):
     t = T[lang]; assets = "../" if lang == "en" else ""
     items = []
     for i, (label, date, image, title, text, link) in enumerate(t["acts"]):
-        im = f'<figure>{img(assets, image)}</figure>' if image else '<figure><span class="ph"></span></figure>'
+        im = f'<figure>{img(assets, image, color=True)}</figure>' if image else '<figure><span class="ph"></span></figure>'
         summary = ACT_SUMMARIES[lang].get(ACT_SLUGS[i])
         intro = f'<p>{summary}</p>' if summary else ''
         items.append(f'<li class="act"><a href="activities/{ACT_SLUGS[i]}.html">{im}<div><span class="lab">{label}</span>{activity_time(date)}<b>{title}</b>{intro}</div></a></li>')
@@ -419,7 +419,7 @@ def activity_time(date):
 def page_act_detail(lang, i):
     t = T[lang]; root = "../"; assets = root + ("../" if lang == "en" else "")
     label, date, image, title, text, link = t["acts"][i]
-    media = f'<figure class="lead">{img(assets, image)}</figure>' if image else ""
+    media = f'<figure class="lead">{img(assets, image, color=True)}</figure>' if image else ""
     photo = ''
     if ACT_SLUGS[i] == 'foss4g-2026':
         captions = ('妖怪の成り立ちを紹介する、FOSS4G 2026での発表の様子',
