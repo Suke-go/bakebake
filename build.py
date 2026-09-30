@@ -44,13 +44,13 @@ J["groups"] = [("Members", "メンバー", [
     ("Kosuke Shimizu", "清水 紘輔", "妖怪生成装置の実装・実験設計", "筑波大学 情報学群 情報メディア創成学類"),
     ("Hiroki Ichikura", "一倉 弘毅", "アーカイブマップの構築", "個人事業主（日置市地域おこし協力隊）"),
     ("Riri Ikebe", "池辺 莉々", "文献調査", "日本女子大学 文学部 史学科"),
-    ("Mirai Hoshikawa", "干川 未来", "XR コンテンツの開発", "筑波大学"),
+    ("Mirai Hoshikawa", "干川 未来", "XR コンテンツの開発", "筑波大学大学院 知能機能システム学位プログラム"),
 ])]
 E["groups"] = [("Members", "", [
     ("Kosuke Shimizu", "清水 紘輔", "Apparatus implementation and experiment design", "College of Media Arts, Science and Technology, University of Tsukuba"),
     ("Hiroki Ichikura", "一倉 弘毅", "Archive map construction", "Independent (Hioki City community revitalization cooperator)"),
     ("Riri Ikebe", "池辺 莉々", "Literature research", "Department of History, Faculty of Humanities, Japan Women's University"),
-    ("Mirai Hoshikawa", "干川 未来", "XR content development", "University of Tsukuba"),
+    ("Mirai Hoshikawa", "干川 未来", "XR content development", "Degree Programs in Systems and Information Engineering, Intelligent and Mechanical Interaction Systems, University of Tsukuba"),
 ])]
 
 # ------------------------------------------------------------ works (year, image, tags, title en, title ja, body)
