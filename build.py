@@ -92,8 +92,9 @@ E["works"] = [
 
 # ------------------------------------------------------------ activities (label, date, image, title, body, link)
 J["acts"] = [
-    ('Event', '2026/11/08', 'jsda-11th-2026.jpg', 'デジタルアーカイブ学会 第11回研究大会にて発表しました', '2026年11月8日、近畿大学 東大阪キャンパスで開催されたデジタルアーカイブ学会 第11回研究大会にて、BAKEBAKEメンバーの池辺莉々（日本女子大学）が「妖怪生成装置」の開発と、展示での実践について発表しました。\n\nデジタルアーカイブの公開は進んでいますが、アーカイブを検索して活用するには、ある程度の知識や関心が前提になります。今回の発表では、利用者自身の日常的な経験を入口にして、専門家でない人がアーカイブに出会うきっかけをつくることを目指しました。題材は「妖怪の誕生」です。人々は昔から、説明のつかない不思議な出来事を妖怪のしわざと考え、名前を付けて語り伝えることで、共同体の知識として共有してきました。\n\n妖怪生成装置では、日常の不思議な体験や、うまく言葉にできない不安を入力すると、国際日本文化研究センターの「怪異・妖怪伝承データベース」に収録された約3万件の伝承から、似た話を探し出します。その伝承を手がかりに生成AIが妖怪の名前や説明文、姿を提案し、利用者はそれを選んだり修正したりしながら、自分の体験から妖怪が生まれる過程をたどります。\n\n展示では66件の妖怪が生まれ、37人の参加者からアンケートの回答を得ました。あいまいだった経験が、名前や姿を与えられることで具体的になる様子が見られ、画像をつくる体験としてだけでなく、自分の不安や恐怖を表現する体験として受け止めた参加者もいました。妖怪とは「言葉にしにくい経験に名前を与えるもの」だという理解を、体験を通じて部分的に促せた手がかりが得られました。\n\n一方で、生成された結果だけを見ても、どこまでが伝承に基づき、どこからがAIによるものかを一目で見分けることはできません。発表では、AIの生成物をただ見せるのではなく、過去の記録と結びつけることの大切さを示しました。今後は、生成された妖怪と元の伝承との関係や来歴を表示し、参照した資料へ遡れる仕組みや、参加者に合わせて伝承データの細かさを調整する仕組みを検討していきます。\n\n発表題目：デジタルアーカイブを基盤とした不可解な体験の記述に向けた妖怪生成システムの開発<br>―生成AIと妖怪・怪異データベースを用いた実践と課題―\n\n発表者：池辺莉々<br>共同著者：一倉弘毅、干川未来、清水紘輔\n\n発表の予稿は「デジタルアーカイブ学会誌」第10巻 s2号に掲載され、J-STAGEでどなたでも無料でお読みいただけます。<a class="u" href="https://www.jstage.jst.go.jp/article/jsda/10/s2/10_s59/_article/-char/ja" target="_blank" rel="noopener">予稿を読む（J-STAGE）</a>', ('https://taikai.digitalarchivejapan.org/11th/', 'デジタルアーカイブ学会 第11回研究大会 公式サイト')),
+    ('Event', '2026/11/08', 'jsda-11th-2026-presentation.jpg', 'デジタルアーカイブ学会 第11回研究大会にて発表しました', '2026年11月8日、近畿大学 東大阪キャンパスで開催されたデジタルアーカイブ学会 第11回研究大会にて、BAKEBAKEメンバーの池辺莉々（日本女子大学）が「妖怪生成装置」の開発と、展示での実践について発表しました。\n\nデジタルアーカイブの公開は進んでいますが、アーカイブを検索して活用するには、ある程度の知識や関心が前提になります。今回の発表では、利用者自身の日常的な経験を入口にして、専門家でない人がアーカイブに出会うきっかけをつくることを目指しました。題材は「妖怪の誕生」です。人々は昔から、説明のつかない不思議な出来事を妖怪のしわざと考え、名前を付けて語り伝えることで、共同体の知識として共有してきました。\n\n妖怪生成装置では、日常の不思議な体験や、うまく言葉にできない不安を入力すると、国際日本文化研究センターの「怪異・妖怪伝承データベース」に収録された約3万件の伝承から、似た話を探し出します。その伝承を手がかりに生成AIが妖怪の名前や説明文、姿を提案し、利用者はそれを選んだり修正したりしながら、自分の体験から妖怪が生まれる過程をたどります。\n\n展示では66件の妖怪が生まれ、37人の参加者からアンケートの回答を得ました。あいまいだった経験が、名前や姿を与えられることで具体的になる様子が見られ、画像をつくる体験としてだけでなく、自分の不安や恐怖を表現する体験として受け止めた参加者もいました。妖怪とは「言葉にしにくい経験に名前を与えるもの」だという理解を、体験を通じて部分的に促せた手がかりが得られました。\n\n一方で、生成された結果だけを見ても、どこまでが伝承に基づき、どこからがAIによるものかを一目で見分けることはできません。発表では、AIの生成物をただ見せるのではなく、過去の記録と結びつけることの大切さを示しました。今後は、生成された妖怪と元の伝承との関係や来歴を表示し、参照した資料へ遡れる仕組みや、参加者に合わせて伝承データの細かさを調整する仕組みを検討していきます。\n\n発表題目：デジタルアーカイブを基盤とした不可解な体験の記述に向けた妖怪生成システムの開発<br>―生成AIと妖怪・怪異データベースを用いた実践と課題―\n\n発表者：池辺莉々<br>共同著者：一倉弘毅、干川未来、清水紘輔\n\n発表の予稿は「デジタルアーカイブ学会誌」第10巻 s2号に掲載され、J-STAGEでどなたでも無料でお読みいただけます。<a class="u" href="https://www.jstage.jst.go.jp/article/jsda/10/s2/10_s59/_article/-char/ja" target="_blank" rel="noopener">予稿を読む（J-STAGE）</a>', ('https://taikai.digitalarchivejapan.org/11th/', 'デジタルアーカイブ学会 第11回研究大会 公式サイト')),
     ('Exhibition', '2026/12', 'siggraph-asia-2026-logo.png', 'BAKEBAKE in SIGGRAPH Asia!', 'SIGGRAPH Asia 2026に出展します！ 2026年12月、マレーシア・クアラルンプールで、BAKEBAKEの「妖怪生成装置」を紹介します。\n\nふと感じた不思議な気配や、うまく言葉にできない日常のもやもや。そんな体験を入力すると、昔から伝わる妖怪の話を手がかりに、AIが妖怪の名前や物語、姿を提案します。自分で選んだり、名前を考えたりしながら、自分だけの妖怪をつくる体験です。\n\nSIGGRAPH Asiaは、コンピューターグラフィックスや、人とコンピューターの新しい関わり方をテーマにした国際会議・展示会です。2026年は12月1日〜4日にクアラルンプール・コンベンションセンター（KLCC）で開催されます。\n\n日常の小さな不思議が、どんな妖怪になるのか。会場でお会いできるのを楽しみにしています！', ('https://asia.siggraph.org/2026/', 'SIGGRAPH Asia 2026公式サイト')),
+    ('Event', '2026/11', 'jsda-11th-2026.jpg', 'BAKEBAKE in デジタルアーカイブ学会', 'デジタルアーカイブ学会 第11回研究大会にて、BAKEBAKEメンバーの池辺莉々（日本女子大学）が発表する予定です。大会は2026年11月7日（土）・8日（日）、近畿大学 東大阪キャンパスで開催されます。\n\n発表では、日常の不思議な出来事や、うまく言葉にできない不安・違和感を、妖怪の名前や説明文、画像として表す「妖怪生成装置」を紹介します。国際日本文化研究センターの「怪異・妖怪伝承データベース」から関連する伝承を探し、生成AIが提案する候補を利用者自身が選んだり、修正したりしながら、自分の体験を形にしていく仕組みです。\n\n展示での実践をもとに、日常の体験を入口としてデジタルアーカイブに触れる可能性を考えます。あわせて、生成された妖怪と参照した伝承のつながりをどう伝えるか、元の記録へどう遡れるようにするかなど、アーカイブを生成AIと組み合わせて活用する際の課題についても報告する予定です。\n\n発表題目：デジタルアーカイブを基盤とした不可解な体験の記述に向けた妖怪生成システムの開発<br>―生成AIと妖怪・怪異データベースを用いた実践と課題―\n\n発表者：池辺莉々<br>共同著者：一倉弘毅、干川未来、清水紘輔\n\n発表を終えました。<a class="u" href="jsda-11th-2026-report.html">発表の報告はこちら</a>', ('https://taikai.digitalarchivejapan.org/11th/', 'デジタルアーカイブ学会 第11回研究大会 公式サイト')),
     ('Event', '2026/09/02', 'foss4g-2026-presentation-1.jpg', 'FOSS4G 2026にて発表しました', '2026年9月2日、地図や位置情報を扱うオープンソース技術の国際会議「FOSS4G 2026」にて、妖怪伝承を地図で読み解く研究を発表しました。国際日本文化研究センターの「怪異・妖怪伝承データベース」に収録された33,378件を対象に、物語がどのような場所と結びついているのかを調べる取り組みです。\n\n昔の妖怪の話には、地名だけでなく「川辺」「峠」「村はずれ」のような場所の描写が登場します。住所がわからなくても、そこがどんな場所だったかを知る手がかりになります。今回の研究では、文章からこうした言葉をコンピューターで取り出し、地図上の川や海、行政区域の情報と照らし合わせました。\n\n地図に載せるときに大切にしたのは、場所がどこまでわかっているかを伝えることです。県までしかわからない話は県の範囲で、市町村を絞り込める話はその範囲で扱い、文章に書かれた手がかりも一緒に残します。地図上の目印を、そのまま出来事が起きた正確な地点と受け取らないための工夫です。\n\n調べた伝承のうち、地名を含むものは約28％でしたが、場所の様子を表す言葉は約75％に見られました。また、河童の話には水辺に関する言葉、幽霊の話には死や弔いに関する言葉が結びつく傾向がありました。これは、伝承の中で何がどのような場所とともに語られているかを示す結果です。\n\n身近な土地にどんな物語が残り、人々が川や道、暮らしの境目をどう捉えてきたのか。場所の曖昧さも含めて伝承を整理することで、地域の文化を地図から読み解くための手がかりを示しました。\n\n発表題目：<span lang="en">Geographic Visualization of the Kaii-Yokai Folklore Database Using Open-Source GIS and NLP</span>', ('https://talks.osgeo.org/foss4g-2026/talk/LGWHNG/', '発表概要（FOSS4G 2026公式サイト・英語）')),
     ("Exhibition", "2026/02 – 2026/05", "venue.jpg", "妖怪EXPO 2026（小豆島）に出展",
      "2026年2月22日、香川県・小豆島の土庄町総合会館フレトピアホールで開催された「日本最大級の妖怪見本市」YOKAI EXPO 2026 に、改良した妖怪生成装置を出展。妖怪研究の第一人者である小松和彦氏に体験いただき、専門的な知見に基づく評価を得た。以降も各地で展示を継続し、79 セッションから 66 体の妖怪が生成された。", ("https://www.yokaiexpo.com/", "YOKAI EXPO 公式サイト")),
@@ -111,8 +112,9 @@ J["acts"] = [
      "「拡張される現実、交差する未来：XRがひらく社会実装のフロンティア」（つくばスタートアップパーク）の Demo Table にて、XR 伝承体験システムを実機展示。", ("https://civicpower.jp/event/735/", "イベントページ")),
 ]
 E["acts"] = [
-    ('Event', '2026/11/08', 'jsda-11th-2026.jpg', 'Presented at the Japan Society for Digital Archive 11th Annual Meeting', 'On November 8, 2026, BAKEBAKE member Riri Ikebe of Japan Women’s University presented our yōkai-generating apparatus and its exhibition practice at the 11th Annual Meeting of the Japan Society for Digital Archive, held at Kindai University’s Higashiosaka Campus.\n\nMore and more digital archives are open to the public, yet searching and using them still assumes some prior knowledge and interest. The talk proposed starting from people’s everyday experiences, so that non-specialists find their own way into an archive. Our subject is the birth of yōkai. For centuries, people have attributed strange events they could not explain to yōkai, named them, and passed the stories on as shared knowledge.\n\nVisitors describe a strange everyday experience or an unease that is hard to put into words. The apparatus then finds similar stories among about 30,000 records in the Kaii-Yokai Folklore Database maintained by the International Research Center for Japanese Studies. Guided by those stories, generative AI suggests a name, a description, and an image, and visitors choose or revise them, following how a yōkai is born from their own experience.\n\nAt our exhibitions, visitors created 66 yōkai, and 37 participants answered our questionnaire. Vague experiences became concrete once they had a name and a form, and some participants took the activity as a way to express their own anxieties and fears, not only as a way to make an image. The results suggest that the experience partly helped visitors understand yōkai as a way of naming experiences that are hard to put into words.\n\nAt the same time, a generated result alone does not show which parts come from folklore and which from AI. The talk argued that AI output should be tied to past records rather than simply displayed. Next, we will show the relationship and provenance between each generated yōkai and its source stories, let users trace it back to the records it drew on, and explore adjusting how detailed the folklore data is for each participant.\n\nTalk title: Developing a Yōkai Generation Interface to Describe Inexplicable Experiences via Digital Archives<br>Practical Challenges in Constructing a Platform with Generative AI and a Yōkai-Kaii Database\n\nPresenter: Riri Ikebe<br>Co-authors: Hiroki Ichikura, Mirai Hoshikawa, Kosuke Shimizu\n\nThe proceedings paper appears in the Journal of the Japan Society for Digital Archive, Vol. 10, No. s2, and is free to read on J-STAGE (in Japanese). <a class="u" href="https://www.jstage.jst.go.jp/article/jsda/10/s2/10_s59/_article/-char/ja" target="_blank" rel="noopener">Read the paper (J-STAGE)</a>', ('https://taikai.digitalarchivejapan.org/11th/', '11th Annual Meeting official website (Japanese)')),
+    ('Event', '2026/11/08', 'jsda-11th-2026-presentation.jpg', 'Presented at the Japan Society for Digital Archive 11th Annual Meeting', 'On November 8, 2026, BAKEBAKE member Riri Ikebe of Japan Women’s University presented our yōkai-generating apparatus and its exhibition practice at the 11th Annual Meeting of the Japan Society for Digital Archive, held at Kindai University’s Higashiosaka Campus.\n\nMore and more digital archives are open to the public, yet searching and using them still assumes some prior knowledge and interest. The talk proposed starting from people’s everyday experiences, so that non-specialists find their own way into an archive. Our subject is the birth of yōkai. For centuries, people have attributed strange events they could not explain to yōkai, named them, and passed the stories on as shared knowledge.\n\nVisitors describe a strange everyday experience or an unease that is hard to put into words. The apparatus then finds similar stories among about 30,000 records in the Kaii-Yokai Folklore Database maintained by the International Research Center for Japanese Studies. Guided by those stories, generative AI suggests a name, a description, and an image, and visitors choose or revise them, following how a yōkai is born from their own experience.\n\nAt our exhibitions, visitors created 66 yōkai, and 37 participants answered our questionnaire. Vague experiences became concrete once they had a name and a form, and some participants took the activity as a way to express their own anxieties and fears, not only as a way to make an image. The results suggest that the experience partly helped visitors understand yōkai as a way of naming experiences that are hard to put into words.\n\nAt the same time, a generated result alone does not show which parts come from folklore and which from AI. The talk argued that AI output should be tied to past records rather than simply displayed. Next, we will show the relationship and provenance between each generated yōkai and its source stories, let users trace it back to the records it drew on, and explore adjusting how detailed the folklore data is for each participant.\n\nTalk title: Developing a Yōkai Generation Interface to Describe Inexplicable Experiences via Digital Archives<br>Practical Challenges in Constructing a Platform with Generative AI and a Yōkai-Kaii Database\n\nPresenter: Riri Ikebe<br>Co-authors: Hiroki Ichikura, Mirai Hoshikawa, Kosuke Shimizu\n\nThe proceedings paper appears in the Journal of the Japan Society for Digital Archive, Vol. 10, No. s2, and is free to read on J-STAGE (in Japanese). <a class="u" href="https://www.jstage.jst.go.jp/article/jsda/10/s2/10_s59/_article/-char/ja" target="_blank" rel="noopener">Read the paper (J-STAGE)</a>', ('https://taikai.digitalarchivejapan.org/11th/', '11th Annual Meeting official website (Japanese)')),
     ('Exhibition', '2026/12', 'siggraph-asia-2026-logo.png', 'BAKEBAKE in SIGGRAPH Asia!', 'We’re exhibiting at SIGGRAPH Asia 2026! This December, we’ll bring BAKEBAKE’s yōkai-generating apparatus to Kuala Lumpur, Malaysia.\n\nAn unexplained presence, a strange feeling, or an everyday moment that is hard to put into words: tell the apparatus about your experience, and AI draws on traditional Japanese folklore to suggest a yōkai’s name, story, and appearance. Choose from the suggestions or invent a name yourself to make the yōkai your own.\n\nSIGGRAPH Asia is an international conference and exhibition exploring computer graphics and new ways for people to interact with technology. The 2026 event takes place on December 1–4 at the Kuala Lumpur Convention Centre (KLCC).\n\nWhat kind of yōkai will emerge from your everyday mysteries? We look forward to seeing you there!', ('https://asia.siggraph.org/2026/', 'SIGGRAPH Asia 2026 official website')),
+    ('Event', '2026/11', 'jsda-11th-2026.jpg', 'BAKEBAKE at the Japan Society for Digital Archive', 'BAKEBAKE member Riri Ikebe of Japan Women’s University is scheduled to present at the 11th Annual Meeting of the Japan Society for Digital Archive. The meeting will take place on November 7–8, 2026, at Kindai University’s Higashiosaka Campus.\n\nThe presentation will introduce our yōkai-generating apparatus, which helps people express strange everyday experiences, anxieties, and feelings that are hard to put into words through names, descriptions, and images of yōkai. It retrieves related stories from the Kaii-Yokai Folklore Database maintained by the International Research Center for Japanese Studies. Participants then choose or revise suggestions from generative AI to give form to their experiences.\n\nDrawing on our exhibition practice, the talk will explore how personal experiences can become an entry point into digital archives. It will also discuss how to show the relationship between generated works and the folklore they reference, and how to let users trace those works back to the original records.\n\nTalk title: Developing a Yōkai Generation Interface to Describe Inexplicable Experiences via Digital Archives<br>Practical Challenges in Constructing a Platform with Generative AI and a Yōkai-Kaii Database\n\nPresenter: Riri Ikebe<br>Co-authors: Hiroki Ichikura, Mirai Hoshikawa, Kosuke Shimizu\n\nThe talk has taken place. <a class="u" href="jsda-11th-2026-report.html">Read our report</a>', ('https://taikai.digitalarchivejapan.org/11th/', '11th Annual Meeting official website (Japanese)')),
     ('Event', '2026/09/02', 'foss4g-2026-presentation-1.jpg', 'Presented at FOSS4G 2026', 'On September 2, 2026, we presented our research at FOSS4G 2026, an international conference on open-source mapping and geospatial technology. We explored how stories connect with places using 33,378 records from the Kaii-Yokai Folklore Database maintained by the International Research Center for Japanese Studies.\n\nOld stories about yōkai, the mysterious beings of Japanese folklore, often mention a riverbank, mountain pass, or village edge. These descriptions offer clues about a setting even without an address. We used software to extract such clues from the stories and compare them with map information about rivers, coastlines, and administrative areas.\n\nOur approach keeps track of how precisely a place is known. A story located only within a prefecture remains associated with that area; one with clearer evidence can be narrowed down to a municipality. The words in the story are preserved alongside this information, so a marker on the map is not mistaken for the exact site of an event.\n\nAbout 28% of the records contain place names, while about 75% contain words describing places. Kappa stories tend to use water-related language, and ghost stories tend to use words about death and mourning. These findings describe how places appear in the stories.\n\nKeeping these clues and uncertainties visible helps us explore local culture through maps: what stories people told about their surroundings, and how they understood familiar places.\n\nTalk title: Geographic Visualization of the Kaii-Yokai Folklore Database Using Open-Source GIS and NLP', ('https://talks.osgeo.org/foss4g-2026/talk/LGWHNG/', 'Read the abstract on the FOSS4G 2026 website')),
     ("Exhibition", "2026/02 – 2026/05", "venue.jpg", "Exhibited at YOKAI EXPO 2026, Shodoshima",
      "The revised apparatus was exhibited at YOKAI EXPO 2026, Japan's largest yōkai fair, held on February 22, 2026 at Tonosho Town Hall (Furetopia Hall) on Shodoshima, Kagawa. Kazuhiko Komatsu, the leading scholar of yōkai studies, tried it and gave an evaluation based on his expertise. Exhibitions continued at further venues; 79 sessions produced 66 yōkai.", ("https://www.yokaiexpo.com/", "YOKAI EXPO website")),
@@ -168,10 +170,10 @@ E["research_groups"] = [
 
 
 
-ACT_SUMMARIES = {'ja': {'jsda-11th-2026': '池辺莉々がデジタルアーカイブ学会 第11回研究大会で、妖怪生成装置の展示実践と、生成した妖怪を元の伝承へ遡れるようにする課題を発表しました。', 'siggraph-asia-2026': 'SIGGRAPH Asia 2026に出展します。あなたの体験から妖怪が生まれる「妖怪生成装置」を紹介します。', 'foss4g-2026': '約3万3千件の妖怪伝承から、物語と場所のつながりを読み解く研究を紹介しました。'}, 'en': {'jsda-11th-2026': 'Riri Ikebe presented our yōkai-generating apparatus at the 11th Annual Meeting, with results from exhibitions and the challenge of tracing generated yōkai back to their source stories.', 'siggraph-asia-2026': 'We’re exhibiting at SIGGRAPH Asia 2026! Discover an apparatus that turns your experiences into yōkai.', 'foss4g-2026': 'Exploring the links between stories and places through more than 33,000 records of Japanese yōkai folklore.'}}
+ACT_SUMMARIES = {'ja': {'jsda-11th-2026': '池辺莉々がデジタルアーカイブ学会 第11回研究大会で発表予定です。妖怪生成装置の実践と、伝承アーカイブを生成AIと組み合わせて活用する際の課題を紹介します。', 'jsda-11th-2026-report': '池辺莉々がデジタルアーカイブ学会 第11回研究大会で、妖怪生成装置の展示実践と、生成した妖怪を元の伝承へ遡れるようにする課題を発表しました。', 'siggraph-asia-2026': 'SIGGRAPH Asia 2026に出展します。あなたの体験から妖怪が生まれる「妖怪生成装置」を紹介します。', 'foss4g-2026': '約3万3千件の妖怪伝承から、物語と場所のつながりを読み解く研究を紹介しました。'}, 'en': {'jsda-11th-2026': 'Riri Ikebe is scheduled to present our yōkai-generating apparatus and the challenges of connecting folklore archives with generative AI at the 11th Annual Meeting.', 'jsda-11th-2026-report': 'Riri Ikebe presented our yōkai-generating apparatus at the 11th Annual Meeting, with results from exhibitions and the challenge of tracing generated yōkai back to their source stories.', 'siggraph-asia-2026': 'We’re exhibiting at SIGGRAPH Asia 2026! Discover an apparatus that turns your experiences into yōkai.', 'foss4g-2026': 'Exploring the links between stories and places through more than 33,000 records of Japanese yōkai folklore.'}}
 
 WORK_SLUGS = ["apparatus", "map", "search", "xr"]
-ACT_SLUGS = ["jsda-11th-2026", "siggraph-asia-2026", "foss4g-2026", "yokai-expo-2026", "jsda-2026", "shonan-shirayuri", "xr-kaigi", "xr-meetup-aichi", "tokyo-node-xr-hackathon", "tsukuba-connect-79"]
+ACT_SLUGS = ["jsda-11th-2026-report", "siggraph-asia-2026", "jsda-11th-2026", "foss4g-2026", "yokai-expo-2026", "jsda-2026", "shonan-shirayuri", "xr-kaigi", "xr-meetup-aichi", "tokyo-node-xr-hackathon", "tsukuba-connect-79"]
 RECORD_PHOTOS = {"venue.jpg", "booth.jpg", "receipts.jpg"}   # 記録写真は白黒。装置の画面と生成図像はカラー。Activities ページの写真はカラー（color=True）。
 
 # ================================================================ rendering
@@ -272,10 +274,14 @@ def yt_thumb(video):
 def page_index(lang):
     t = T[lang]; root = ""; assets = "../" if lang == "en" else ""
     w = t["works"]; a = t["acts"]
-    pick = [card(root, assets, a[0][0], a[0][1], a[0][2], a[0][3], f"activities/{ACT_SLUGS[0]}.html"),
-            card(root, assets, a[1][0], a[1][1], a[1][2], a[1][3], f"activities/{ACT_SLUGS[1]}.html"),
-            card(root, assets, "Publication", "2026.12", "contemporary.jpg", t["pubs"][0][1][0][1], "publications.html"),
-            card(root, assets, "Work", w[0][0], w[0][1], work_title(lang, w[0]), f"works/{WORK_SLUGS[0]}.html")]
+    pick = [card(root, assets, a[k][0], a[k][1], a[k][2], a[k][3], f"activities/{ACT_SLUGS[k]}.html") for k in range(len(a))]
+    pick[2:2] = [card(root, assets, "Publication", "2026.12", "contemporary.jpg", t["pubs"][0][1][0][1], "publications.html"),
+                 card(root, assets, "Work", w[0][0], w[0][1], work_title(lang, w[0]), f"works/{WORK_SLUGS[0]}.html")]
+    secs = len(pick) * 5
+    marquee = (f'<div class="marquee" style="--dur:{secs}s"><div class="marquee-track">'
+               f'<div class="marquee-set">{"".join(pick)}</div>'
+               f'<div class="marquee-set" aria-hidden="true" inert>{"".join(pick)}</div>'
+               '</div></div>')
     mem = "".join(f'<li>{img(assets, PHOTO[en], en, "face")}<div><b>{en}{plink(en)}</b><span class="ja">{ja}</span><span>{role}</span><span class="aff">{aff}</span></div></li>'
                   for en, ja, role, aff in t["groups"][0][2])
     body = f"""
@@ -300,8 +306,9 @@ def page_index(lang):
 <section class="sec">
   <div class="wrap">
     <h2>{t['pickup']}</h2>
-    <div class="cards">{''.join(pick)}</div>
   </div>
+  {marquee}
+  <div class="wrap"><a class="btn" href="activities.html">{t['more']}</a></div>
 </section>
 
 <section class="sec">
@@ -417,6 +424,49 @@ def activity_time(date):
     return f'<time{attr}>{date}</time>'
 
 
+SLIDE_JS = """<script>
+document.querySelectorAll('.slides').forEach(function (deck) {
+  var track = deck.querySelector('.slides-track');
+  var count = deck.querySelector('.slides-count');
+  var total = track.children.length;
+  function current() { return Math.round(track.scrollLeft / track.clientWidth); }
+  function show() { count.textContent = (current() + 1) + ' / ' + total; }
+  deck.querySelectorAll('button[data-step]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var n = Math.min(total - 1, Math.max(0, current() + Number(b.dataset.step)));
+      track.scrollTo({ left: n * track.clientWidth, behavior: 'smooth' });
+    });
+  });
+  track.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+      e.preventDefault();
+      deck.querySelector('button[data-step="' + (e.key === 'ArrowRight' ? 1 : -1) + '"]').click();
+    }
+  });
+  track.addEventListener('scroll', show, { passive: true });
+  show();
+});
+</script>"""
+
+
+def slide_deck(lang, assets, folder, n):
+    ja = lang == 'ja'
+    base = f'{assets}assets/{folder}'
+    figs = ''.join(
+        f'<figure><img src="{base}/slide-{k:02d}.jpg" alt="{"発表スライド" if ja else "Slide"} {k}" width="1600" height="900"{"" if k == 1 else " loading=lazy"}></figure>'
+        for k in range(1, n + 1))
+    label = '発表スライド' if ja else 'Presentation slides'
+    prev, nxt = ('前のスライド', '次のスライド') if ja else ('Previous slide', 'Next slide')
+    pdf = 'PDFで見る' if ja else 'View as PDF'
+    return (f'<section class="slides" aria-label="{label}"><h2>{label}</h2>'
+            f'<div class="slides-track" tabindex="0">{figs}</div>'
+            f'<div class="slides-nav"><button type="button" data-step="-1" aria-label="{prev}">←</button>'
+            f'<span class="slides-count" aria-live="polite">1 / {n}</span>'
+            f'<button type="button" data-step="1" aria-label="{nxt}">→</button>'
+            f'<a class="u" href="{base}/{folder}.pdf" target="_blank" rel="noopener">{pdf}</a></div>'
+            f'</section>{SLIDE_JS}')
+
+
 def page_act_detail(lang, i):
     t = T[lang]; root = "../"; assets = root + ("../" if lang == "en" else "")
     label, date, image, title, text, link = t["acts"][i]
@@ -438,6 +488,10 @@ def page_act_detail(lang, i):
             f'<figure>{img(assets, "dh-young-researchers-2026-photo.jpg", captions[1])}<figcaption>{captions[1]}</figcaption></figure>'
             '</div>'
         )
+    if ACT_SLUGS[i] == 'jsda-11th-2026-report':
+        cap = '近畿大学 東大阪キャンパスで発表する池辺莉々' if lang == 'ja' else 'Riri Ikebe presenting at Kindai University, Higashiosaka Campus'
+        media = f'<figure class="lead">{img(assets, image, cap)}<figcaption>{cap}</figcaption></figure>'
+        photo = slide_deck(lang, assets, 'jsda-11th-2026-slides', 15)
     l = f'<p><a class="u" href="{link[0]}" target="_blank" rel="noopener">{link[1]}</a></p>' if link else ""
     paragraphs = ''.join(f'<p>{paragraph}</p>' for paragraph in text.split('\n\n'))
     trial = apparatus_trial(lang) if ACT_SLUGS[i] == 'siggraph-asia-2026' else ''
