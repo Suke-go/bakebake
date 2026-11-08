@@ -436,7 +436,7 @@ PICK_JS = """<script>
   var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (still) return;
   m.classList.add('loop');
-  var pos = 0, hold = 0, hover = false, timer;
+  var pos = 0, hold = 0, timer;
   function width() { return set.offsetWidth; }
   function rest(ms) { hold++; clearTimeout(timer); timer = setTimeout(function () { hold = 0; pos = m.scrollLeft; }, ms); }
   function wrap() {
@@ -444,12 +444,10 @@ PICK_JS = """<script>
     if (m.scrollLeft >= w) m.scrollLeft -= w;
     else if (m.scrollLeft <= 0) m.scrollLeft += w;
   }
-  m.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') hover = true; });
-  m.addEventListener('pointerleave', function () { hover = false; pos = m.scrollLeft; });
   ['touchstart', 'wheel', 'keydown', 'pointerdown'].forEach(function (ev) {
     m.addEventListener(ev, function () { rest(2500); }, { passive: true });
   });
-  m.addEventListener('scroll', function () { if (hold || hover) { wrap(); pos = m.scrollLeft; } }, { passive: true });
+  m.addEventListener('scroll', function () { if (hold) { wrap(); pos = m.scrollLeft; rest(2500); } }, { passive: true });
   document.querySelectorAll('.pick-nav button').forEach(function (b) {
     b.addEventListener('click', function () {
       rest(3000); wrap();
@@ -459,7 +457,7 @@ PICK_JS = """<script>
     });
   });
   function tick() {
-    if (!hold && !hover && !m.matches(':focus-within')) {
+    if (!hold) {
       pos += 0.5;
       if (pos >= width()) pos -= width();
       m.scrollLeft = pos;

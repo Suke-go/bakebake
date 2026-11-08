@@ -81,7 +81,7 @@ img.bw{filter:grayscale(1) contrast(1.12) brightness(.92) sepia(.12)}
 .card b{display:block;font-weight:500;font-size:15px;line-height:1.6;margin-top:4px}
 @media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.cards{grid-template-columns:1fr}}
-/* Pick Up: 横スクロールできるカード列。JSが自動で流し、触れている間は止める。動きを減らす設定では流さない */
+/* Pick Up: 横スクロールできるカード列。JSが自動で流し、スクロール操作中だけ止める。動きを減らす設定では流さない */
 .pick-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px}
 .pick-nav{display:flex;gap:10px}
 .pick-nav button,.slides-nav button{font:inherit;font-size:15px;color:var(--ink);background:none;border:1px solid var(--ink);border-radius:999px;width:38px;height:38px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
