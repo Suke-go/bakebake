@@ -157,8 +157,8 @@ PUBS = [
 J["pubs"] = E["pubs"] = PUBS
 
 # ------------------------------------------------------------ articles
-J["articles"] = [("note", "2026/02/22", "～妖怪EXPO2026に参加しました～", "妖怪生成装置の制作背景と、体験を名前・物語・姿にする仕組みを紹介しています。", "https://note.com/galileonics/n/nb37f8924070f")]
-E["articles"] = [("note", "2026/02/22", "Exhibiting at YOKAI EXPO 2026 (Japanese)", "The ideas and design behind the yōkai-generating apparatus.", "https://note.com/galileonics/n/nb37f8924070f")]
+J["articles"] = [("note", "2026/02/22", "～妖怪EXPO2026に参加しました～", "妖怪生成装置の制作背景と、体験を名前・物語・姿にする仕組みを紹介しています。", "https://note.com/galileonics/n/nb37f8924070f", "venue.jpg")]
+E["articles"] = [("note", "2026/02/22", "Exhibiting at YOKAI EXPO 2026 (Japanese)", "The ideas and design behind the yōkai-generating apparatus.", "https://note.com/galileonics/n/nb37f8924070f", "venue.jpg")]
 
 # ------------------------------------------------------------ about page text
 J["about_sections"] = [
@@ -264,7 +264,7 @@ def shell(lang, page, body, root, home=False, title=None, description=None):
 
 
 def card(root, assets, label, date, image, title, href):
-    im = img(assets, image) if image else '<span class="ph"></span>'
+    im = img(assets, image) if image else '<span class="ph logo"></span>'
     return f'<a class="card" href="{root}{href}"><figure>{im}</figure><span class="lab">{label}</span><time>{date}</time><b>{title}</b></a>'
 
 
@@ -435,11 +435,11 @@ def page_activities(lang):
     t = T[lang]; assets = "../" if lang == "en" else ""
     items = []
     for i, (label, date, image, title, text, link) in enumerate(t["acts"]):
-        im = f'<figure>{img(assets, image, color=True)}</figure>' if image else '<figure><span class="ph"></span></figure>'
+        im = f'<figure>{img(assets, image, color=True)}</figure>' if image else '<figure><span class="ph logo"></span></figure>'
         summary = ACT_SUMMARIES[lang].get(ACT_SLUGS[i])
         intro = f'<p>{summary}</p>' if summary else ''
-        items.append(f'<li class="act"><a href="activities/{ACT_SLUGS[i]}.html">{im}<div><span class="lab">{label}</span>{activity_time(date)}<b>{title}</b>{intro}</div></a></li>')
-    body = f'<section class="page"><div class="wrap"><h1>Activities</h1><ul class="acts">{"".join(items)}</ul></div></section>'
+        items.append(f'<a class="acard" href="activities/{ACT_SLUGS[i]}.html">{im}<div class="meta"><span class="lab">{label}</span>{activity_time(date)}</div><b>{title}</b>{intro}</a>')
+    body = f'<section class="page"><div class="wrap"><h1>Activities</h1><div class="agrid">{"".join(items)}</div></div></section>'
     return shell(lang, "activities", body, "")
 
 
@@ -591,8 +591,10 @@ def page_publications(lang):
 
 def page_articles(lang):
     t = T[lang]
-    lis = "".join(f'<li class="act"><a href="{u}" target="_blank" rel="noopener"><figure><span class="ph"></span></figure><div><span class="lab">{lab}</span><time>{d}</time><b>{ti}</b><p>{p}</p></div></a></li>' for lab, d, ti, p, u in t["articles"])
-    body = f'<section class="page"><div class="wrap"><h1>Articles</h1><ul class="acts">{lis}</ul></div></section>'
+    assets = "../" if lang == "en" else ""
+    ph = '<span class="ph logo"></span>'
+    lis = "".join(f'<a class="acard" href="{u}" target="_blank" rel="noopener"><figure>{img(assets, im, color=True) if im else ph}</figure><div class="meta"><span class="lab">{lab}</span><time>{d}</time></div><b>{ti}</b><p>{p}</p></a>' for lab, d, ti, p, u, im in t["articles"])
+    body = f'<section class="page"><div class="wrap"><h1>Articles</h1><div class="agrid">{lis}</div></div></section>'
     return shell(lang, "articles", body, "")
 
 

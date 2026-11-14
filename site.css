@@ -34,6 +34,9 @@ a.u:hover{color:var(--red);border-color:var(--red)}
 img.bw{filter:grayscale(1) contrast(1.12) brightness(.92) sepia(.12)}
 .lab{display:inline-block;font-size:11.5px;letter-spacing:.12em;color:#fff;background:var(--blue);padding:0 9px;line-height:21px}
 .ph{display:block;background:var(--soft);width:100%;aspect-ratio:3/2}
+/* 写真のない項目: 灰色の箱のままにせず、ロゴを薄く置く */
+.ph.logo{position:relative;height:100%}
+.ph.logo::after{content:"";position:absolute;inset:24%;background:url(assets/bakebake-logo.png) center/contain no-repeat;filter:grayscale(1);opacity:.22}
 .btn{display:inline-block;margin-top:22px;padding:10px 26px;border:1px solid var(--ink);border-radius:999px;font-size:14px;letter-spacing:.04em;transition:background .2s,color .2s}
 .btn:hover{background:var(--red);border-color:var(--red);color:#fff}
 .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
@@ -151,14 +154,18 @@ figure.wide img{width:100%;max-height:60vh;object-fit:cover}
 @media(max-width:800px){.works{grid-template-columns:1fr}}
 
 /* activities / articles */
-.acts{list-style:none;margin:0;padding:0}
-.act{display:grid;grid-template-columns:300px minmax(0,1fr);gap:16px var(--g);padding:26px 0;border-top:1px solid var(--hair)}
-.act figure{aspect-ratio:3/2;overflow:hidden;background:var(--soft)}
-.act figure img{width:100%;height:100%;object-fit:cover}
-.act time{display:inline-block;margin-left:12px;font-size:13px;color:var(--dim)}
-.act b{display:block;font-size:19px;font-weight:500;margin:8px 0 6px;line-height:1.5}
-.act p{font-size:14px;color:#3A3936;max-width:var(--text)}
-@media(max-width:700px){.act{grid-template-columns:1fr}}
+/* 一覧は Works と同じ 3 列のカード。題名だけの項目でも横が空かない */
+.agrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px var(--g)}
+.acard figure{aspect-ratio:3/2;overflow:hidden;background:var(--soft);border:1px solid var(--hair)}
+.acard figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.acard:hover figure img{transform:scale(1.03)}
+.acard .meta{display:flex;align-items:center;flex-wrap:wrap;gap:4px 12px;margin-top:14px}
+.acard time{font-size:13px;color:var(--dim)}
+.acard b{display:block;font-size:17px;font-weight:500;margin-top:8px;line-height:1.55}
+.acard p{font-size:13.5px;line-height:1.75;color:#3A3936;margin-top:6px}
+.acard:hover b{color:var(--red)}
+@media(max-width:900px){.agrid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.agrid{grid-template-columns:1fr}}
 
 /* publications */
 .pubs{list-style:none;margin:0;padding:0;max-width:var(--text)}
@@ -197,10 +204,8 @@ footer{border-top:1px solid var(--hair);padding:48px 0 64px;font-size:13px;color
 @media(max-width:560px){.wgrid{grid-template-columns:1fr}}
 
 /* activities list as links */
-.act a{display:contents}
-.act:hover b{color:var(--red)}
-.card figure img.event-logo,.act figure img.event-logo{object-fit:contain;padding:20px;background:#fff;transform:none}
-.card figure img.event-banner,.act figure img.event-banner{object-fit:contain;background:#171408;transform:none}
+.card figure img.event-logo,.acard figure img.event-logo{object-fit:contain;padding:20px;background:#fff;transform:none}
+.card figure img.event-banner,.acard figure img.event-banner{object-fit:contain;background:#171408;transform:none}
 .detail figure.lead img.event-banner{width:100%;height:auto}
 
 /* detail pages */
@@ -212,6 +217,8 @@ footer{border-top:1px solid var(--hair);padding:48px 0 64px;font-size:13px;color
 .detail h1 small{display:block;font-family:var(--font);font-size:16px;color:var(--dim);margin-top:8px}
 .detail figure.lead{max-width:var(--text);margin-bottom:28px}
 .detail figure.lead img{border:1px solid var(--hair);background:#fff}
+/* 縦に長い写真が本文を画面の外へ押し出さないよう、高さを抑える */
+.detail figure.lead img:not(.event-logo):not(.event-banner){width:auto;max-width:100%;max-height:min(64vh,560px)}
 .detail figure.lead img.event-logo{width:100%;max-width:720px;padding:clamp(20px,4vw,48px)}
 .detail figure.activity-photo{margin-top:28px}
 .jsda-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:var(--text);margin-bottom:28px}
