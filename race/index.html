@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>妖怪アーカイブレース アーカイブ版 | Project BAKEBAKE</title>
+<meta name="description" content="似ている妖怪伝承をたどって目的の話にたどり着くゲーム。怪異・妖怪伝承データベースの一部を収録した、サーバーなしで動く小さな版。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="race.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../index.html">Project BAKEBAKE</a>
+  <h1>妖怪アーカイブレース<small>アーカイブ版</small></h1>
+  <a class="back" href="../works/race.html">← Works</a>
+</header>
+<main>
+  <section id="app" class="panel" aria-live="polite"><p role="status">読み込んでいます…</p></section>
+  <figure class="mapbox">
+    <svg id="map" role="img" aria-label="話の場所と、たどった道の地図"></svg>
+    <figcaption>地図の位置は話が記録された地点です。多くの話は都道府県の代表地点に置かれています。</figcaption>
+  </figure>
+</main>
+<footer>
+  <p id="about"></p>
+  <p>データ：<a href="https://www.nichibun.ac.jp/YoukaiDB/" target="_blank" rel="noopener">国際日本文化研究センター「怪異・妖怪伝承データベース」</a> ・ 海岸線：Natural Earth ・ © Project BAKEBAKE</p>
+</footer>
+<script src="race.js"></script>
+</body>
+</html>

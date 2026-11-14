@@ -61,6 +61,11 @@ J["works"] = [
      "続いて、外見や画風を選んで妖怪の姿を描きます。水墨画・絵巻・浮世絵・漫画・電脳という五つの表現から、自分の感覚に合うものを選べます。展示会場では、できあがった妖怪を感熱紙のお札に印刷して持ち帰る体験も用意しています。\n\n"
      "この制作では、人々が不思議な出来事を語り、名付け、描いてきた営みに着目しています。自分の中にあった曖昧な感覚が、一体の妖怪になる。その過程を、現代の技術で体験してもらうことを目指しています。",
      ("receipts.jpg", "体験によって生成された妖怪の札"), None),
+    ("2025–2026", "race.png", ["Archive Analysis", "Game"], "Yōkai Archive Race", "妖怪アーカイブレース",
+     "怪異・妖怪伝承データベースの話を、似ている話から似ている話へとたどって、目的の話にたどり着くゲーム。重複する話をまとめた 31,898 話のそれぞれを内容の近い話と結び、その網の上で遊ぶ。一手ごとに 6 枚の候補が出て、いまの話と共通する言葉が本文の中に示される。滋賀のガタロウから鹿児島の水神へというように、話の近さをたどる道は、地図の上では思いがけず遠くへ跳ぶ。\n\n"
+     "段階が進むと、途中で通る県（寄り道）が決められ、移動した距離も数えられる。着いたあとは、自分の道を最短の道や案内役の道と地図の上で見比べる。検索語を入れるのではなく、読んで選ぶことを繰り返してアーカイブの中を歩く。\n\n"
+     "ここでは 15 問と、その道のまわりの 2,893 話を収めたアーカイブ版を公開している。サーバーを使わずブラウザだけで動き、操作の記録はどこにも送られない。",
+     None, None),
     ("2025–2026", "geo_record.png", ["Archive Analysis", "Map"], "Yōkai Map / Geospatial Support", "妖怪マップ / 地理的支持の表現",
      "伝承データベースの 33,378 件について、行政的な支持範囲、地名候補、地名ではない場所の記述、地理的近接、人間の状態を表す語、派生的な境界、表示用アンカー、出所を分けて保持する。代表点を出来事の位置として扱わず、県と市町村のポリゴンを支持範囲として持つ。市町村支持を割り当てた 1,231 件では、県支持と比べて支持面積が中央値で 97.5% 縮小する。地形や水系と重ねた妖怪マップの基盤となる。",
      None, ("m6Qd-kOV1Ds?start=22", "妖怪マップのプロトタイプ")),
@@ -78,6 +83,11 @@ E["works"] = [
      "Describe what happened and how you felt. The apparatus finds related folklore and suggests names and stories. Choose a suggestion or name the yōkai yourself, then select its appearance and an artistic style. At exhibitions, the result can also become a printed paper talisman to take home.\n\n"
      "The project explores how people give form to mysterious experiences through storytelling, naming, and drawing. It invites you to take part in that process using today's technology.",
      ("receipts.jpg", "Receipts generated from visitors' experiences"), None),
+    ("2025–2026", "race.png", ["Archive Analysis", "Game"], "Yōkai Archive Race", "妖怪アーカイブレース",
+     "A game played on the Database of Folktales of Mysterious Phenomena and Yōkai: move from one tale to a similar tale until you reach a target tale. The 31,898 tales that remain after merging duplicates are each linked to the tales closest to them in content, and the game is played on that network. Every move offers six cards, with the words shared with the current tale marked in the text. A route that follows similarity, such as from a Gatarō tale in Shiga to a water-deity tale in Kagoshima, often jumps unexpectedly far on the map.\n\n"
+     "In later levels the route must pass through given prefectures, and the distance travelled is counted. After arriving, the player compares their own route with the shortest route and the guide's route on the map. Instead of typing a query, the player walks through the archive by reading and choosing.\n\n"
+     "The archive edition published here holds 15 puzzles and the 2,893 tales around their routes. It runs in the browser with no server, and nothing the player does is sent anywhere. The game text is in Japanese.",
+     None, None),
     ("2025–2026", "geo_record.png", ["Archive Analysis", "Map"], "Yōkai Map / Geospatial Support", "妖怪マップ / 地理的支持の表現",
      "For 33,378 records in the database, administrative support areas, candidate toponyms, non-toponymic place descriptions, geographic proximity, human-condition terms, derived interfaces, display anchors, and provenance are kept as separate fields. A representative point is never treated as an event location; prefecture and municipality polygons are held as support areas. For the 1,231 records assigned municipality support, the support area shrinks by a median of 97.5% relative to prefecture support. This is the basis for the yōkai map overlaid on terrain and water systems.",
      None, ("m6Qd-kOV1Ds?start=22", "Yōkai map prototype")),
@@ -172,7 +182,7 @@ E["research_groups"] = [
 
 ACT_SUMMARIES = {'ja': {'jsda-11th-2026': '池辺莉々がデジタルアーカイブ学会 第11回研究大会で発表予定です。妖怪生成装置の実践と、伝承アーカイブを生成AIと組み合わせて活用する際の課題を紹介します。', 'jsda-11th-2026-report': '池辺莉々がデジタルアーカイブ学会 第11回研究大会で、妖怪生成装置の展示実践と、生成した妖怪を元の伝承へ遡れるようにする課題を発表しました。', 'siggraph-asia-2026': 'SIGGRAPH Asia 2026に出展します。あなたの体験から妖怪が生まれる「妖怪生成装置」を紹介します。', 'foss4g-2026': '約3万3千件の妖怪伝承から、物語と場所のつながりを読み解く研究を紹介しました。'}, 'en': {'jsda-11th-2026': 'Riri Ikebe is scheduled to present our yōkai-generating apparatus and the challenges of connecting folklore archives with generative AI at the 11th Annual Meeting.', 'jsda-11th-2026-report': 'Riri Ikebe presented our yōkai-generating apparatus at the 11th Annual Meeting, with results from exhibitions and the challenge of tracing generated yōkai back to their source stories.', 'siggraph-asia-2026': 'We’re exhibiting at SIGGRAPH Asia 2026! Discover an apparatus that turns your experiences into yōkai.', 'foss4g-2026': 'Exploring the links between stories and places through more than 33,000 records of Japanese yōkai folklore.'}}
 
-WORK_SLUGS = ["apparatus", "map", "search", "xr"]
+WORK_SLUGS = ["apparatus", "race", "map", "search", "xr"]
 ACT_SLUGS = ["jsda-11th-2026-report", "siggraph-asia-2026", "jsda-11th-2026", "foss4g-2026", "yokai-expo-2026", "jsda-2026", "shonan-shirayuri", "xr-kaigi", "xr-meetup-aichi", "tokyo-node-xr-hackathon", "tsukuba-connect-79"]
 RECORD_PHOTOS = {"venue.jpg", "booth.jpg", "receipts.jpg"}   # 記録写真は白黒。装置の画面と生成図像はカラー。Activities ページの写真はカラー（color=True）。
 
@@ -258,9 +268,15 @@ def card(root, assets, label, date, image, title, href):
     return f'<a class="card" href="{root}{href}"><figure>{im}</figure><span class="lab">{label}</span><time>{date}</time><b>{title}</b></a>'
 
 
-def apparatus_trial(lang):
+def apparatus_trial(lang, bare=False):
     label = '妖怪生成装置を体験する' if lang == 'ja' else 'Try the yōkai-generating apparatus'
-    return f'<p><a class="btn" href="https://bakemon.net/" target="_blank" rel="noopener">{label}（bakemon.net）</a></p>'
+    link = f'<a class="btn" href="https://bakemon.net/" target="_blank" rel="noopener">{label}（bakemon.net）</a>'
+    return link if bare else f'<p>{link}</p>'
+
+
+def map_link(lang):
+    label = '妖怪マップを見る' if lang == 'ja' else 'Open the yōkai map'
+    return f'<a class="btn" href="https://bakemon.net/map" target="_blank" rel="noopener">{label}（bakemon.net/map）</a>'
 
 
 def work_title(lang, w):
@@ -276,7 +292,8 @@ def page_index(lang):
     w = t["works"]; a = t["acts"]
     pick = [card(root, assets, a[k][0], a[k][1], a[k][2], a[k][3], f"activities/{ACT_SLUGS[k]}.html") for k in range(len(a))]
     pick[2:2] = [card(root, assets, "Publication", "2026.12", "contemporary.jpg", t["pubs"][0][1][0][1], "publications.html"),
-                 card(root, assets, "Work", w[0][0], w[0][1], work_title(lang, w[0]), f"works/{WORK_SLUGS[0]}.html")]
+                 card(root, assets, "Work", w[0][0], w[0][1], work_title(lang, w[0]), f"works/{WORK_SLUGS[0]}.html"),
+                 card(root, assets, "Work", w[1][0], w[1][1], work_title(lang, w[1]), f"works/{WORK_SLUGS[1]}.html")]
     cards = "".join(pick)
     prev, nxt = ('前へ', '次へ') if lang == 'ja' else ('Previous', 'Next')
     pick_nav = (f'<div class="pick-nav"><button type="button" data-step="-1" aria-label="{prev}">←</button>'
@@ -301,8 +318,7 @@ def page_index(lang):
     <h2>{t['whats_h']}</h2>
     <p class="full">{t['full']}</p>
     <p>{t['whats']}</p>
-    <a class="btn" href="about.html">{t['more']}</a>
-    {apparatus_trial(lang)}
+    <div class="btns"><a class="btn" href="about.html">{t['more']}</a>{apparatus_trial(lang, bare=True)}{map_link(lang)}</div>
   </div>
 </section>
 
@@ -325,8 +341,7 @@ def page_index(lang):
 
 <section class="sec contact">
   <div class="wrap">
-    <h2>{t['contact_h']}</h2>
-    <p>{t['contact_p']}</p>
+    <div><h2>{t['contact_h']}</h2><p>{t['contact_p']}</p></div>
     <a class="btn" href="contact.html">{t['get_in_touch']}</a>
   </div>
 </section>
@@ -384,7 +399,8 @@ def page_works(lang):
 def page_work_detail(lang, i):
     t = T[lang]; root = "../"; assets = root + ("../" if lang == "en" else "")
     year, image, tags, ten, tja, text, strip, video = t["works"][i]
-    media = f'<figure class="lead">{img(assets, image)}</figure>' if image else ""
+    lead = 'race-screen.png' if WORK_SLUGS[i] == 'race' else image   # the card shows the map alone, the page the whole screen
+    media = f'<figure class="lead">{img(assets, lead)}</figure>' if lead else ""
     if video:
         media += f'<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/{video[0]}" title="{video[1]}" loading="lazy" allowfullscreen></iframe><figcaption>{video[1]}</figcaption></div>'
     st = f'<figure class="strip">{img(assets, strip[0])}<figcaption>{strip[1]}</figcaption></figure>' if strip else ""
@@ -394,6 +410,11 @@ def page_work_detail(lang, i):
     if WORK_SLUGS[i] == 'apparatus':
         note_label = '制作の背景と仕組みをnoteで読む' if lang == 'ja' else 'Read about the ideas and design on note (Japanese)'
         links = f'<p><a class="u" href="https://note.com/galileonics/n/nb37f8924070f" target="_blank" rel="noopener">{note_label}</a></p>' + apparatus_trial(lang)
+    if WORK_SLUGS[i] == 'map':
+        links = f'<p>{map_link(lang)}</p>'
+    if WORK_SLUGS[i] == 'race':
+        play_label = 'アーカイブ版で遊ぶ' if lang == 'ja' else 'Play the archive edition (Japanese)'
+        links = f'<p><a class="btn" href="{assets}race/index.html">{play_label}</a></p>'
     body = f"""
 <section class="page detail">
   <div class="wrap">

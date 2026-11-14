@@ -36,6 +36,8 @@ img.bw{filter:grayscale(1) contrast(1.12) brightness(.92) sepia(.12)}
 .ph{display:block;background:var(--soft);width:100%;aspect-ratio:3/2}
 .btn{display:inline-block;margin-top:22px;padding:10px 26px;border:1px solid var(--ink);border-radius:999px;font-size:14px;letter-spacing:.04em;transition:background .2s,color .2s}
 .btn:hover{background:var(--red);border-color:var(--red);color:#fff}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btns .btn{margin-top:0}
 
 /* ---------- header ---------- */
 .top{position:sticky;top:0;left:0;right:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--hair)}
@@ -101,8 +103,10 @@ img.bw{filter:grayscale(1) contrast(1.12) brightness(.92) sepia(.12)}
 .mlist span{display:block;font-size:13px;color:var(--dim);line-height:1.6}
 .mlist .ja{color:var(--ink);font-size:14px}
 @media(max-width:760px){.mlist{grid-template-columns:1fr}}
-.contact{background:var(--soft);border-bottom:0}
-.contact p{max-width:var(--text)}
+.contact{background:var(--soft);border-bottom:0;padding:clamp(40px,4.5vw,64px) 0}
+.contact .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px 48px}
+.contact h2{margin-bottom:10px}
+.contact .btn{margin-top:0;flex:none}
 
 /* ---------- inner pages ---------- */
 .page{padding:clamp(40px,5vw,72px) 0 clamp(64px,8vw,120px)}
