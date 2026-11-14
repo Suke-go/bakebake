@@ -1,0 +1,1 @@
+:root{--font-main:"Kaisei Tokumin","Hiragino Mincho ProN","Yu Mincho",serif;--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark}*{box-sizing:border-box}html,body{color:#f2efe7;height:100%;font-family:var(--font-main);background:#111;margin:0}button,input,select{font-family:var(--font-main)}

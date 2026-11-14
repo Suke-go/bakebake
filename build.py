@@ -61,10 +61,10 @@ J["works"] = [
      "続いて、外見や画風を選んで妖怪の姿を描きます。水墨画・絵巻・浮世絵・漫画・電脳という五つの表現から、自分の感覚に合うものを選べます。展示会場では、できあがった妖怪を感熱紙のお札に印刷して持ち帰る体験も用意しています。\n\n"
      "この制作では、人々が不思議な出来事を語り、名付け、描いてきた営みに着目しています。自分の中にあった曖昧な感覚が、一体の妖怪になる。その過程を、現代の技術で体験してもらうことを目指しています。",
      ("receipts.jpg", "体験によって生成された妖怪の札"), None),
-    ("2025–2026", "race.png", ["Archive Analysis", "Game"], "Yōkai Archive Race", "妖怪アーカイブレース",
+    ("2025–2026", "race.jpg", ["Archive Analysis", "Game"], "Yōkai Archive Race", "妖怪アーカイブレース",
      "怪異・妖怪伝承データベースの話を、似ている話から似ている話へとたどって、目的の話にたどり着くゲーム。重複する話をまとめた 31,898 話のそれぞれを内容の近い話と結び、その網の上で遊ぶ。一手ごとに 6 枚の候補が出て、いまの話と共通する言葉が本文の中に示される。滋賀のガタロウから鹿児島の水神へというように、話の近さをたどる道は、地図の上では思いがけず遠くへ跳ぶ。\n\n"
      "段階が進むと、途中で通る県（寄り道）が決められ、移動した距離も数えられる。着いたあとは、自分の道を最短の道や案内役の道と地図の上で見比べる。検索語を入れるのではなく、読んで選ぶことを繰り返してアーカイブの中を歩く。\n\n"
-     "ここでは 15 問と、その道のまわりの 2,893 話を収めたアーカイブ版を公開している。サーバーを使わずブラウザだけで動き、操作の記録はどこにも送られない。",
+     "このサイトでは、15 問とその道のまわりの 2,893 話を収めた版を公開している。サーバーを使わずブラウザだけで動き、操作の記録はどこにも送られない。",
      None, None),
     ("2025–2026", "geo_record.png", ["Archive Analysis", "Map"], "Yōkai Map / Geospatial Support", "妖怪マップ / 地理的支持の表現",
      "伝承データベースの 33,378 件について、行政的な支持範囲、地名候補、地名ではない場所の記述、地理的近接、人間の状態を表す語、派生的な境界、表示用アンカー、出所を分けて保持する。代表点を出来事の位置として扱わず、県と市町村のポリゴンを支持範囲として持つ。市町村支持を割り当てた 1,231 件では、県支持と比べて支持面積が中央値で 97.5% 縮小する。地形や水系と重ねた妖怪マップの基盤となる。",
@@ -83,10 +83,10 @@ E["works"] = [
      "Describe what happened and how you felt. The apparatus finds related folklore and suggests names and stories. Choose a suggestion or name the yōkai yourself, then select its appearance and an artistic style. At exhibitions, the result can also become a printed paper talisman to take home.\n\n"
      "The project explores how people give form to mysterious experiences through storytelling, naming, and drawing. It invites you to take part in that process using today's technology.",
      ("receipts.jpg", "Receipts generated from visitors' experiences"), None),
-    ("2025–2026", "race.png", ["Archive Analysis", "Game"], "Yōkai Archive Race", "妖怪アーカイブレース",
+    ("2025–2026", "race.jpg", ["Archive Analysis", "Game"], "Yōkai Archive Race", "妖怪アーカイブレース",
      "A game played on the Database of Folktales of Mysterious Phenomena and Yōkai: move from one tale to a similar tale until you reach a target tale. The 31,898 tales that remain after merging duplicates are each linked to the tales closest to them in content, and the game is played on that network. Every move offers six cards, with the words shared with the current tale marked in the text. A route that follows similarity, such as from a Gatarō tale in Shiga to a water-deity tale in Kagoshima, often jumps unexpectedly far on the map.\n\n"
      "In later levels the route must pass through given prefectures, and the distance travelled is counted. After arriving, the player compares their own route with the shortest route and the guide's route on the map. Instead of typing a query, the player walks through the archive by reading and choosing.\n\n"
-     "The archive edition published here holds 15 puzzles and the 2,893 tales around their routes. It runs in the browser with no server, and nothing the player does is sent anywhere. The game text is in Japanese.",
+     "The edition published on this site holds 15 puzzles and the 2,893 tales around their routes. It runs in the browser with no server, and nothing the player does is sent anywhere. The game text is in Japanese.",
      None, None),
     ("2025–2026", "geo_record.png", ["Archive Analysis", "Map"], "Yōkai Map / Geospatial Support", "妖怪マップ / 地理的支持の表現",
      "For 33,378 records in the database, administrative support areas, candidate toponyms, non-toponymic place descriptions, geographic proximity, human-condition terms, derived interfaces, display anchors, and provenance are kept as separate fields. A representative point is never treated as an event location; prefecture and municipality polygons are held as support areas. For the 1,231 records assigned municipality support, the support area shrinks by a median of 97.5% relative to prefecture support. This is the basis for the yōkai map overlaid on terrain and water systems.",
@@ -399,7 +399,7 @@ def page_works(lang):
 def page_work_detail(lang, i):
     t = T[lang]; root = "../"; assets = root + ("../" if lang == "en" else "")
     year, image, tags, ten, tja, text, strip, video = t["works"][i]
-    lead = 'race-screen.png' if WORK_SLUGS[i] == 'race' else image   # the card shows the map alone, the page the whole screen
+    lead = 'race-screen.jpg' if WORK_SLUGS[i] == 'race' else image   # the card shows the map alone, the page the whole screen
     media = f'<figure class="lead">{img(assets, lead)}</figure>' if lead else ""
     if video:
         media += f'<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/{video[0]}" title="{video[1]}" loading="lazy" allowfullscreen></iframe><figcaption>{video[1]}</figcaption></div>'
@@ -413,7 +413,7 @@ def page_work_detail(lang, i):
     if WORK_SLUGS[i] == 'map':
         links = f'<p>{map_link(lang)}</p>'
     if WORK_SLUGS[i] == 'race':
-        play_label = 'アーカイブ版で遊ぶ' if lang == 'ja' else 'Play the archive edition (Japanese)'
+        play_label = '妖怪アーカイブレースで遊ぶ' if lang == 'ja' else 'Play Yōkai Archive Race (Japanese)'
         links = f'<p><a class="btn" href="{assets}race/index.html">{play_label}</a></p>'
     body = f"""
 <section class="page detail">
