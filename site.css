@@ -220,6 +220,7 @@ footer{border-top:1px solid var(--hair);padding:48px 0 64px;font-size:13px;color
 /* 縦に長い写真が本文を画面の外へ押し出さないよう、高さを抑える */
 .detail figure.lead img:not(.event-logo):not(.event-banner){width:auto;max-width:100%;max-height:min(64vh,560px)}
 .detail figure.lead img.event-logo{width:100%;max-width:720px;padding:clamp(20px,4vw,48px)}
+.detail figure.lead img.hai-logo{max-width:300px}
 .detail figure.activity-photo{margin-top:28px}
 .jsda-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:var(--text);margin-bottom:28px}
 .jsda-gallery img{width:100%;height:auto;border:1px solid var(--hair)}
