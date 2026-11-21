@@ -55,24 +55,24 @@ E["groups"] = [("Members", "", [
 
 # ------------------------------------------------------------ works (year, image, tags, title en, title ja, body)
 J["works"] = [
-    ("2025–2026", "interface.png", ["Generative Apparatus"], "Yōkai-Generating Apparatus", "妖怪生成装置",
+    ("","interface.png", ["Generative Apparatus"], "Yōkai-Generating Apparatus", "妖怪生成装置",
      "夜道で感じた気配や、なぜか心に残る出来事。妖怪生成装置は、あなたの不思議な体験をもとに、名前と物語、姿を持つ妖怪をつくる仕組みです。言葉にしにくかった感覚を、誰かに見せたり語ったりできる形にしていきます。\n\n"
      "まず、何が起きたか、そのときどう感じたかを入力します。装置は昔から伝わる妖怪の話から似たものを探し、あなたの体験と組み合わせて名前や物語を提案します。候補を選ぶことも、自分で名付けることもできます。\n\n"
      "続いて、外見や画風を選んで妖怪の姿を描きます。水墨画・絵巻・浮世絵・漫画・電脳という五つの表現から、自分の感覚に合うものを選べます。展示会場では、できあがった妖怪を感熱紙のお札に印刷して持ち帰る体験も用意しています。\n\n"
      "この制作では、人々が不思議な出来事を語り、名付け、描いてきた営みに着目しています。自分の中にあった曖昧な感覚が、一体の妖怪になる。その過程を、現代の技術で体験してもらうことを目指しています。",
      ("receipts.jpg", "体験によって生成された妖怪の札"), None),
-    ("2025–2026", "race.jpg", ["Archive Analysis", "Game"], "Yōkai Archive Race", "妖怪アーカイブレース",
+    ("","race.jpg", ["Archive Analysis", "Game"], "Yōkai Archive Race", "妖怪アーカイブレース",
      "怪異・妖怪伝承データベースの話を、似ている話から似ている話へとたどって、目的の話にたどり着くゲーム。重複する話をまとめた 31,898 話のそれぞれを内容の近い話と結び、その網の上で遊ぶ。一手ごとに 6 枚の候補が出て、いまの話と共通する言葉が本文の中に示される。滋賀のガタロウから鹿児島の水神へというように、話の近さをたどる道は、地図の上では思いがけず遠くへ跳ぶ。\n\n"
      "段階が進むと、途中で通る県（寄り道）が決められ、移動した距離も数えられる。着いたあとは、自分の道を最短の道や案内役の道と地図の上で見比べる。検索語を入れるのではなく、読んで選ぶことを繰り返してアーカイブの中を歩く。\n\n"
      "このサイトでは、15 問とその道のまわりの 2,893 話を収めた版を公開している。サーバーを使わずブラウザだけで動き、操作の記録はどこにも送られない。",
      None, None),
-    ("2025–2026", "geo_record.png", ["Archive Analysis", "Map"], "Yōkai Map / Geospatial Support", "妖怪マップ / 地理的支持の表現",
+    ("","geo_record.png", ["Archive Analysis", "Map"], "Yōkai Map / Geospatial Support", "妖怪マップ / 地理的支持の表現",
      "伝承データベースの 33,378 件について、行政的な支持範囲、地名候補、地名ではない場所の記述、地理的近接、人間の状態を表す語、派生的な境界、表示用アンカー、出所を分けて保持する。代表点を出来事の位置として扱わず、県と市町村のポリゴンを支持範囲として持つ。市町村支持を割り当てた 1,231 件では、県支持と比べて支持面積が中央値で 97.5% 縮小する。地形や水系と重ねた妖怪マップの基盤となる。",
      None, ("m6Qd-kOV1Ds?start=22", "妖怪マップのプロトタイプ")),
-    ("2025–2026", "subspace.png", ["Archive Analysis", "Retrieval"], "Related-Yōkai Search", "関連妖怪検索",
+    ("","subspace.png", ["Archive Analysis", "Retrieval"], "Related-Yōkai Search", "関連妖怪検索",
      "基盤モデルの凍結埋め込みに対して、メタデータに基づくコントラスト学習を後付けで適用し、妖怪資料間の類似性を「話題」「地域」「現象」の複数軸に分解して扱う。単一の類似度では捉えにくい関係を軸ごとに見ることができ、展示では利用者が関心に応じて関連妖怪を探索できる。妖怪生成装置の検索段階もこの上で動く。",
      None, None),
-    ("2025–2026", "xr_front.jpg", ["XR"], "XR Folklore Experience", "XR 伝承体験システム",
+    ("","xr_front.jpg", ["XR"], "XR Folklore Experience", "XR 伝承体験システム",
      "伝承の場面を XR で体験するシステム。怪異が語られた土地の古地図の上に伝承の映像を重ね、暗がりの中で気配を感じ取ることで伝承を身体的に学ぶ。会場では投影と VR ヘッドセット（Meta Quest 3）の両方で体験できる。\n\n"
      "最初の題材は、東京・赤坂の紀伊國坂に伝わる「むじな」。夜道で泣く女に声をかけると顔のないのっぺらぼうだった――という、小泉八雲『怪談』にも収められた話である。妖怪生成装置、妖怪マップと合わせて TSUKUBA CONNÉCT、TOKYO NODE XR HACKATHON、XR Meetup Aichi、XR Kaigi で展示した。",
      ("xr_dome.jpg", "古地図の上に投影された「妖怪×都市」"), ("aHgcSVWnUmc", "XR 伝承体験システムの映像プロトタイプ")),
@@ -83,23 +83,23 @@ J["works"] = [
      None, None),
 ]
 E["works"] = [
-    ("2025–2026", "interface.png", ["Generative Apparatus"], "Yōkai-Generating Apparatus", "妖怪生成装置",
+    ("","interface.png", ["Generative Apparatus"], "Yōkai-Generating Apparatus", "妖怪生成装置",
      "A strange presence on a dark road, or a moment you cannot quite explain: this apparatus turns your experience into a yōkai with a name, story, and image that you can share.\n\n"
      "Describe what happened and how you felt. The apparatus finds related folklore and suggests names and stories. Choose a suggestion or name the yōkai yourself, then select its appearance and an artistic style. At exhibitions, the result can also become a printed paper talisman to take home.\n\n"
      "The project explores how people give form to mysterious experiences through storytelling, naming, and drawing. It invites you to take part in that process using today's technology.",
      ("receipts.jpg", "Receipts generated from visitors' experiences"), None),
-    ("2025–2026", "race.jpg", ["Archive Analysis", "Game"], "Yōkai Archive Race", "妖怪アーカイブレース",
+    ("","race.jpg", ["Archive Analysis", "Game"], "Yōkai Archive Race", "妖怪アーカイブレース",
      "A game played on the Database of Folktales of Mysterious Phenomena and Yōkai: move from one tale to a similar tale until you reach a target tale. The 31,898 tales that remain after merging duplicates are each linked to the tales closest to them in content, and the game is played on that network. Every move offers six cards, with the words shared with the current tale marked in the text. A route that follows similarity, such as from a Gatarō tale in Shiga to a water-deity tale in Kagoshima, often jumps unexpectedly far on the map.\n\n"
      "In later levels the route must pass through given prefectures, and the distance travelled is counted. After arriving, the player compares their own route with the shortest route and the guide's route on the map. Instead of typing a query, the player walks through the archive by reading and choosing.\n\n"
      "The edition published on this site holds 15 puzzles and the 2,893 tales around their routes. It runs in the browser with no server, and nothing the player does is sent anywhere. The game text is in Japanese.",
      None, None),
-    ("2025–2026", "geo_record.png", ["Archive Analysis", "Map"], "Yōkai Map / Geospatial Support", "妖怪マップ / 地理的支持の表現",
+    ("","geo_record.png", ["Archive Analysis", "Map"], "Yōkai Map / Geospatial Support", "妖怪マップ / 地理的支持の表現",
      "For 33,378 records in the database, administrative support areas, candidate toponyms, non-toponymic place descriptions, geographic proximity, human-condition terms, derived interfaces, display anchors, and provenance are kept as separate fields. A representative point is never treated as an event location; prefecture and municipality polygons are held as support areas. For the 1,231 records assigned municipality support, the support area shrinks by a median of 97.5% relative to prefecture support. This is the basis for the yōkai map overlaid on terrain and water systems.",
      None, ("m6Qd-kOV1Ds?start=22", "Yōkai map prototype")),
-    ("2025–2026", "subspace.png", ["Archive Analysis", "Retrieval"], "Related-Yōkai Search", "関連妖怪検索",
+    ("","subspace.png", ["Archive Analysis", "Retrieval"], "Related-Yōkai Search", "関連妖怪検索",
      "Metadata-based contrastive learning is applied post hoc to frozen foundation-model embeddings so that similarity between records can be decomposed into topic, region, and phenomenon axes. Relations that a single similarity score obscures can be inspected axis by axis, and exhibition visitors can explore related yōkai according to their interest. The retrieval stage of the apparatus runs on the same basis.",
      None, None),
-    ("2025–2026", "xr_front.jpg", ["XR"], "XR Folklore Experience", "XR 伝承体験システム",
+    ("","xr_front.jpg", ["XR"], "XR Folklore Experience", "XR 伝承体験システム",
      "A system for experiencing scenes from folklore in XR. Imagery of a tale is layered onto old maps of the place where it was told, so that the visitor learns the tale bodily by sensing a presence in the dark. At venues it is shown both as a projection and through a VR headset (Meta Quest 3).\n\n"
      "The first subject is the “Mujina” of Kii-no-kuni-zaka in Akasaka, Tokyo — the tale, also told by Lafcadio Hearn in Kwaidan, of a traveller who speaks to a weeping woman on a night road and finds she has no face. Exhibited together with the apparatus and the yōkai map at TSUKUBA CONNÉCT, TOKYO NODE XR HACKATHON, XR Meetup Aichi, and XR Kaigi.",
      ("xr_dome.jpg", "“Yōkai × City” projected over an old map"), ("aHgcSVWnUmc", "XR folklore experience prototype")),
@@ -282,7 +282,7 @@ def shell(lang, page, body, root, home=False, title=None, description=None):
 
 def card(root, assets, label, date, image, title, href):
     im = img(assets, image) if image else '<span class="ph logo"></span>'
-    return f'<a class="card" href="{root}{href}"><figure>{im}</figure><span class="lab">{label}</span><time>{date}</time><b>{title}</b></a>'
+    return f'<a class="card" href="{root}{href}"><figure>{im}</figure><span class="lab">{label}</span>{f"<time>{date}</time>" if date else ""}<b>{title}</b></a>'
 
 
 def apparatus_trial(lang, bare=False):
@@ -408,7 +408,7 @@ def page_works(lang):
             im = img(assets, image) if image else yt_thumb(video)
             tg = "".join(f'<span class="tag">{x}</span>' for x in tags)
             items.append(f'<a class="wcard" href="works/{WORK_SLUGS[i]}.html"><figure>{im}</figure><div class="tags">{tg}</div><b>{ten}</b><small>{tja}</small></a>')
-        out.append(f'<section class="blk"><h2>{y}</h2><div class="wgrid">{"".join(items)}</div></section>')
+        out.append(f'<section class="blk">{f"<h2>{y}</h2>" if y else ""}<div class="wgrid">{"".join(items)}</div></section>')
     body = f'<section class="page"><div class="wrap"><h1>Works</h1>{"".join(out)}</div></section>'
     return shell(lang, "works", body, "")
 
@@ -439,7 +439,7 @@ def page_work_detail(lang, i):
 <section class="page detail">
   <div class="wrap">
     <a class="back" href="{root}works.html">← Works</a>
-    <div class="tags">{tg}<time>{year}</time></div>
+    <div class="tags">{tg}{f"<time>{year}</time>" if year else ""}</div>
     <h1>{ten}<small>{tja}</small></h1>
     {media}
     <div class="txt">{paragraphs}{links}</div>
