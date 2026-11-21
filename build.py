@@ -396,20 +396,14 @@ def page_team(lang):
 
 
 def page_works(lang):
-    """List: thumbnail, tags, title. Grouped by year."""
+    """List: thumbnail, tags, title. One grid, not split by year."""
     t = T[lang]; assets = "../" if lang == "en" else ""
-    years = {}
-    for i, w in enumerate(t["works"]):
-        years.setdefault(w[0], []).append((i, w))
-    out = []
-    for y, ws in years.items():
-        items = []
-        for i, (_, image, tags, ten, tja, _text, _strip, video) in ws:
-            im = img(assets, image) if image else yt_thumb(video)
-            tg = "".join(f'<span class="tag">{x}</span>' for x in tags)
-            items.append(f'<a class="wcard" href="works/{WORK_SLUGS[i]}.html"><figure>{im}</figure><div class="tags">{tg}</div><b>{ten}</b><small>{tja}</small></a>')
-        out.append(f'<section class="blk">{f"<h2>{y}</h2>" if y else ""}<div class="wgrid">{"".join(items)}</div></section>')
-    body = f'<section class="page"><div class="wrap"><h1>Works</h1>{"".join(out)}</div></section>'
+    items = []
+    for i, (_, image, tags, ten, tja, _text, _strip, video) in enumerate(t["works"]):
+        im = img(assets, image) if image else yt_thumb(video)
+        tg = "".join(f'<span class="tag">{x}</span>' for x in tags)
+        items.append(f'<a class="wcard" href="works/{WORK_SLUGS[i]}.html"><figure>{im}</figure><div class="tags">{tg}</div><b>{ten}</b><small>{tja}</small></a>')
+    body = f'<section class="page"><div class="wrap"><h1>Works</h1><section class="blk"><div class="wgrid">{"".join(items)}</div></section></div></section>'
     return shell(lang, "works", body, "")
 
 
