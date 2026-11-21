@@ -579,6 +579,8 @@ def page_act_detail(lang, i):
             'Receiving the Best Poster Award at HAI 2026', 'The award announcement at HAI 2026')
         media = f'<figure class="lead">{img(assets, image, captions[0])}<figcaption>{captions[0]}</figcaption></figure>'
         photo = f'<figure class="lead activity-photo">{img(assets, "hai-2026-award-announcement.jpg", captions[1])}<figcaption>{captions[1]}</figcaption></figure>'
+        official = 'HAI 2026 Awards (official conference website)'
+        photo += f'<figure class="lead activity-photo">{img(assets, "hai-2026-awards-official.png", official)}<figcaption>{official}</figcaption></figure>'
     if ACT_SLUGS[i] == 'jsda-11th-2026-report':
         cap = '近畿大学 東大阪キャンパスで発表する池辺莉々' if lang == 'ja' else 'Riri Ikebe presenting at Kindai University, Higashiosaka Campus'
         media = f'<figure class="lead compact">{img(assets, image, cap)}<figcaption>{cap}</figcaption></figure>'
